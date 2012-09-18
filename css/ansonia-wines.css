@@ -1,0 +1,25 @@
+/**
+    header stuff
+**/
+
+#navigation {
+    border-bottom: 1px solid #888;
+}
+#navigation  #links{
+    margin: 0;
+}
+#navigation  .link{
+    list-style-type: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+#navigation  .link.nav-link { float: left }
+#navigation  .link.social-link { float: right }
+#navigation  .link a{
+    color: #888;
+    font-weight: 700;
+}
+#navigation  .link a:hover{ 
+    color: #333;
+    text-decoration: none;
+}
