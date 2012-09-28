@@ -52,5 +52,13 @@
                 <?php get_links(4, '<li class="social-link link">', '</li>', '', TRUE, 'url', TRUE); ?>
 			</ul>
 		</div><!-- #navigation -->
+        
+        <div class="row clearfix">
+            <div class="span12" id="logo-banner">
+                <a href="<?php echo home_url(); ?>">
+                    <img src="/wp-content/themes/_s/img/logo.jpg" />
+                </a>
+            </div>
+        </div>
 
         <div id="content">

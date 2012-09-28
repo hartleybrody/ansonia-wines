@@ -4,6 +4,7 @@
 
 #navigation {
     border-bottom: 1px solid #888;
+    margin-bottom: 10px
 }
 #navigation  #links{
     margin: 0;
@@ -22,4 +23,10 @@
 #navigation  .link a:hover{ 
     color: #333;
     text-decoration: none;
+}
+
+#logo-banner, #featured-post{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #888;
 }

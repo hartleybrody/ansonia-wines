@@ -19,26 +19,36 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
                     <?php $post_num += 1; ?>
                     <?php if ( $post_num == 1): // this is the latest post, display as banner ?>
-                        
-                        <h1><?php the_title(); ?></h1>
-                        
+                    
+                        <div class="row">
+                            <div class="span12" id="featured-post">
+                                <a href="<?php the_permalink() ?>" >
+                                    <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" id="featured-post-img" />
+                                </a>
+                            </div>
+                        </div>
                         
                     <?php else: // this is not the first post, display as a tile ?>
+                        <?php if ( $post_num % 3 == 2): ?>
+                            <div class="row tiles">
+                        <?php endif; ?>
+                                <div class="span4" id="tile-post">
+                                    <a href="<?php the_permalink() ?>" >
+                                        <img src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" id="tile-post-img" />
+                                    </a>
+                                </div>
+                        <?php if ( $post_num % 3 == 1 &! $post_num == 1): ?>
+                            </div> <!--.row.tiles-->
+                        <?php endif; ?>
                         
-                        <?php
-                            /* Include the Post-Format-specific template for the content.
-                             * If you want to overload this in a child theme then include a file
-                             * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-                             */
-                            get_template_part( 'content', get_post_format() );
-                        ?>
                     <?php endif; ?>
 
 				<?php endwhile; ?>
 
-			<?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
+			<?php else : ?>
 
-				<?php get_template_part( 'no-results', 'index' ); ?>
+				<h4>No Posts</h4>
+                <h5>Sorry!</h5>
 
 			<?php endif; ?>
 
