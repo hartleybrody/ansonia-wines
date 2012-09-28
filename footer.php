@@ -1,5 +1,9 @@
-        <?php wp_footer(); ?>
+        
         </div><!-- #content -->
+        <div id="footer">
+            &copy; Ansonia Wines 2012
+        </div>
+        <?php wp_footer(); ?>
     </div><!-- .container -->
   
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
