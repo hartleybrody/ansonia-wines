@@ -13,7 +13,12 @@ get_header(); ?>
 
         <div class="row">
             <div class="span6 offset3">
-                <h1><?php the_title(); ?></h1>
+                <h1 class="title"><?php the_title(); ?></h1>
+                <div class="meta">
+                    Posted <?php the_time('l') ?>
+                    <?php edit_post_link( __( 'Edit', '_s' ), '<span class="edit-link">', '</span>' ); ?>
+                </div>
+                <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" id="featured-post-img" class="hover-swap"/>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <?php the_content(); ?>
                 </article>
