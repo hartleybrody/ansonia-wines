@@ -36,7 +36,8 @@
     
     <link rel="stylesheet" href="wp-content/themes/_s/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="wp-content/themes/_s/bootstrap/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="wp-content/themes/_s/css/ansonia-wines.css">
+    <link rel="stylesheet" href="wp-content/themes/_s/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
     
     <?php wp_head(); ?>
 </head>
