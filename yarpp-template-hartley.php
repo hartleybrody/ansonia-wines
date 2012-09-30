@@ -1,6 +1,5 @@
 <?php if (have_posts()):?>
-<h5>You might like</h5>
-<div class="row">
+<div class="row" id="related-posts">
     <?php while (have_posts()) : the_post(); ?>
     <div class="span3">
         <a href="<?php the_permalink() ?>">

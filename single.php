@@ -18,7 +18,9 @@ get_header(); ?>
                     Posted <?php the_time('l') ?>
                     <?php edit_post_link( __( 'Edit', '_s' ), '<span class="edit-link">', '</span>' ); ?>
                 </div>
-                <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" id="featured-post-img" class="hover-swap"/>
+                <div id="post-title">
+                    <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" id="post-title-img"/>
+                </div>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <?php the_content(); ?>
                 </article>
