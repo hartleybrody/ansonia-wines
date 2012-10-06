@@ -39,6 +39,30 @@
 }
 
 /****************************************************
+    index.php
+****************************************************/
+.tile{
+    text-align: right;
+}
+.tile .title{
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 700;
+    
+    display: block;
+    max-width: 350px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.tile .title:hover{ 
+    color: #333;
+    text-decoration: none;
+}
+
+
+/****************************************************
     single.php
 ****************************************************/
 h1.title{

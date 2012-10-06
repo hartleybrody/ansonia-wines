@@ -41,9 +41,12 @@ get_header(); ?>
                         <?php if ( $post_num % 3 == 2): ?>
                             <div class="row tiles">
                         <?php endif; ?>
-                                <div class="span4" class="tile-post">
+                                <div class="span4 tile">
                                     <a href="<?php the_permalink() ?>" >
                                         <img src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" class="tile-post-img hover-swap" />
+                                    </a><br>
+                                    <a href="<?php the_permalink() ?>" class="title">
+                                        <?php the_title(); ?>
                                     </a>
                                 </div>
                         <?php if ( $post_num % 3 == 1 &! $post_num == 1): ?>
