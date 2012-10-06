@@ -34,9 +34,9 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
     <![endif]-->
     
-    <link rel="stylesheet" href="wp-content/themes/_s/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="wp-content/themes/_s/bootstrap/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="wp-content/themes/_s/style.css">
+    <link rel="stylesheet" href="/wp-content/themes/_s/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/wp-content/themes/_s/bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/wp-content/themes/_s/style.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
     
     <?php wp_head(); ?>
@@ -53,13 +53,5 @@
                 <?php get_links(4, '<li class="social-link link">', '</li>', '', TRUE, 'url', TRUE); ?>
 			</ul>
 		</div><!-- #navigation -->
-        
-        <div class="row clearfix">
-            <div class="span12" id="logo-banner">
-                <a href="<?php echo home_url(); ?>">
-                    <img src="/wp-content/themes/_s/img/logo.jpg" />
-                </a>
-            </div>
-        </div>
 
         <div id="content">
