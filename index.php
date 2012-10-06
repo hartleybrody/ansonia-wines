@@ -45,7 +45,7 @@ get_header(); ?>
                                     <a href="<?php the_permalink() ?>" >
                                         <img src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" class="tile-post-img hover-swap" />
                                     </a><br>
-                                    <a href="<?php the_permalink() ?>" class="title">
+                                    <a href="<?php the_permalink() ?>" class="tile-title">
                                         <?php the_title(); ?>
                                     </a>
                                 </div>

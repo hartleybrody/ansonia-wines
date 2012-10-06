@@ -13,9 +13,7 @@ get_header(); ?>
         
         <div class="row clearfix">
             <div class="span12" id="logo-banner">
-                <a href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" />
-                </a>
+                <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" />
             </div>
         </div>
 
