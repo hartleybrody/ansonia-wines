@@ -13,19 +13,32 @@
 
 get_header(); ?>
 
-		<div id="primary" class="content-area">
-			<div id="content" class="site-content" role="main">
+<?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post(); ?>
+    
+        <div class="row clearfix">
+            <div class="span12" id="logo-banner">
+                <a href="<?php echo home_url(); ?>">
+                    <img src="/wp-content/themes/_s/img/logo.jpg" />
+                </a>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="span6 offset2">
+                <h1 class="title"><?php the_title(); ?></h1>
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <?php the_content(); ?>
+                </article>
+            </div>
+            <div class="span2">
+                <?php get_sidebar(); ?>
+            </div>
+        </div>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+    <?php endwhile; ?>
+<?php endif; ?>
 
-					<?php get_template_part( 'content', 'page' ); ?>
-
-					<?php comments_template( '', true ); ?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</div><!-- #content .site-content -->
-		</div><!-- #primary .content-area -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
