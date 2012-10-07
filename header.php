@@ -50,7 +50,7 @@
                 <!-- navigation links -->
                 <?php get_links(3, '<li class="nav-link link">', '</li>', '', TRUE, 'url', TRUE); ?>
                 <!-- social links -->
-                <?php get_links(4, '<li class="social-link link">', '</li>', '', TRUE, 'url', TRUE); ?>
+                <?php get_links(4, '<li class="social-link link hidden-phone">', '</li>', '', TRUE, 'url', TRUE); ?>
 			</ul>
 		</div><!-- #navigation -->
 
