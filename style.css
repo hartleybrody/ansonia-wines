@@ -1,3 +1,12 @@
+
+a{ 
+    color: #888;
+    font-weight: 700;
+}
+a:hover{ 
+    color: #333;
+    text-decoration: none;
+}
 /**
     header stuff
 **/
@@ -75,8 +84,6 @@ h1.title{
 .meta{
     font-size: 0.8em;
     color: #ccc;
-    border-bottom: 1px solid #888;
-    margin-bottom: 5px;
 }
 
 p{
@@ -90,3 +97,19 @@ p{
     padding: 5px 0;
 }
 #related-posts .span3:first-child{ margin-left:0; }
+
+/****************************************************
+    sidebar.php
+****************************************************/
+#sidebar h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "Georgia", serif
+}
+#sidebar li{
+    max-width: 350px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

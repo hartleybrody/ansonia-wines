@@ -18,7 +18,7 @@ get_header(); ?>
         </div>
 
         <div class="row">
-            <div class="span6 offset2">
+            <div class="span6 offset1">
                 <h1 class="title"><?php the_title(); ?></h1>
                 <div class="meta">
                     Posted <?php the_time('l') ?>
@@ -28,7 +28,7 @@ get_header(); ?>
                     <?php the_content(); ?>
                 </article>
             </div>
-            <div class="span2">
+            <div class="span3 offset1">
                 <?php get_sidebar(); ?>
             </div>
         </div>
