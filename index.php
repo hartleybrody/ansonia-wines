@@ -33,6 +33,9 @@ get_header(); ?>
                             <div class="span12" id="featured-post">
                                 <a href="<?php the_permalink() ?>" >
                                     <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" id="featured-post-img" class="hover-swap"/>
+                                </a><br>
+                                <a href="<?php the_permalink() ?>" id="featured-post-title">
+                                    <?php the_title(); ?>
                                 </a>
                             </div>
                         </div>
@@ -41,7 +44,7 @@ get_header(); ?>
                         <?php if ( $post_num % 3 == 2): ?>
                             <div class="row tiles">
                         <?php endif; ?>
-                                <div class="span4 tile"><?php echo $post_num; ?>
+                                <div class="span4 tile">
                                     <a href="<?php the_permalink() ?>" >
                                         <img src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" class="tile-post-img hover-swap" />
                                     </a><br>
