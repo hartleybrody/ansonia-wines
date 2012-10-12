@@ -59,7 +59,9 @@ a:hover{
     font-size: 2.0em;
     line-height: 2.0em;
 }
-
+.tiles{
+    margin-bottom: 30px;
+}
 .tile{
     text-align: right;
 }
