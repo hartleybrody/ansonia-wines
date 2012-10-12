@@ -33,12 +33,12 @@ get_header(); ?>
                     </li>
                     <li>
                         <a href="https://twitter.com/intent/tweet/?url=<?php echo urlencode( get_permalink($post->ID) ); ?>&text=<?php echo urlencode( the_title("", "", False) ); ?>&via=ansoniawines" target="_blank">
-                            <img src="/wp-content/themes/_s/img/twitter.png" id="twitter-icon" />
+                            <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/twitter.png" id="twitter-icon" />
                         </a>
                     </li>
                     <li>
                         <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
-                            <img src="/wp-content/themes/_s/img/facebook.png"  id="facebook-icon" />
+                            <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/facebook.png"  id="facebook-icon" />
                         </a>
                     </li>
                 </ul>
