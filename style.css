@@ -34,7 +34,7 @@ a:hover{
     text-decoration: none;
 }
 
-#logo-banner, #featured-post{
+#logo-banner{
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #888;
@@ -50,6 +50,15 @@ a:hover{
 /****************************************************
     index.php
 ****************************************************/
+#featured-post{
+    text-align: right;
+}
+#featured-post-title{
+    text-transform: uppercase;
+    font-size: 2.0em;
+    line-height: 2.0em;
+}
+
 .tile{
     text-align: right;
 }
@@ -74,20 +83,63 @@ a:hover{
 /****************************************************
     single.php
 ****************************************************/
+#article-banner{
+    margin-bottom: 20px;
+}
+#header-meta{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #888;
+    
+    text-align: center;
+}
+#sharing{
+    margin-top: 20px;
+}
+#sharing li{
+    display: inline;
+    list-style-type: none;
+    padding: 0 5px;
+}
+#purchase-link{
+    font-family: "Georgia", serif;
+    color: #0088cc;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+#purchase-link:hover{
+    color: #005580;
+    text-decoration: none;
+}
+#twitter-icon, #facebook-icon{
+    width: 40px;
+    opacity: 0.8;
+}
+#twitter-icon:hover, #facebook-icon:hover{
+    opacity: 0.9;
+}
 h1.title{
     margin-bottom: 0px;
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 28px;
-    font-family: "Georgia", serif
+    font-size: 28px;
+    line-height: 32px;
+    font-family: "Georgia", serif;
+    font-weight: 100;
 }
-.meta{
-    font-size: 0.8em;
-    color: #ccc;
+h3.subtitle{
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "Georgia", serif;
+    font-weight: 100;
 }
 
 p{
     font-family: "Georgia", serif
+}
+
+#footer-meta{
+    font-size: 0.8em;
+    color: #ccc;
 }
 
 #related-posts{
