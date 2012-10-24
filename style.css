@@ -56,8 +56,11 @@ a:hover{
 }
 #featured-post-title{
     text-transform: uppercase;
-    font-size: 2.0em;
+    font-size: 1.5em;
     line-height: 2.0em;
+    
+    display:block;
+    margin-bottom: 20px;
 }
 .tiles{
     margin-bottom: 30px;
@@ -137,7 +140,8 @@ h3.subtitle{
 }
 
 p{
-    font-family: "Georgia", serif
+    font-family: "Georgia", serif;
+    line-height: 1.8em;
 }
 
 #footer-meta{
@@ -157,9 +161,8 @@ p{
     sidebar.php
 ****************************************************/
 #sidebar h3{
-    text-transform: uppercase;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 24px;
     font-family: "Georgia", serif
 }
 #sidebar li{

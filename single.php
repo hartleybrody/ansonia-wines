@@ -20,10 +20,10 @@ get_header(); ?>
         <div class="row">
             <div class="span6 offset3" id="header-meta">
                 <h1 class="title"><?php the_title(); ?></h1>
-                <h3 class="subtitle">This is the type of wine.</h3>
+                <h3 class="subtitle">&laquo;<?php echo get_post_meta( $post->ID, 'name_of_wine', True ); ?>&raquo;</h3>
                 <ul id="sharing">
                     <li>
-                        <a href="#" id="purchase-link">purchase: $42</a>
+                        <a href="<?php echo get_post_meta( $post->ID, 'purchase_link', True ); ?>" id="purchase-link">purchase: <?php echo get_post_meta( $post->ID, 'price', True ); ?></a>
                     </li>
                     <li>
                          <!--or share:-->&nbsp;

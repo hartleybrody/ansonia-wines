@@ -25,20 +25,15 @@ get_header(); ?>
         </div>
         
         <div class="row">
-            <div class="span6 offset1">
+            <div class="span6 offset3">
                 <h1 class="title"><?php the_title(); ?></h1>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <?php the_content(); ?>
                 </article>
-            </div>
-            <div class="span3 offset1">
-                <?php get_sidebar(); ?>
             </div>
         </div>
 
     <?php endwhile; ?>
 <?php endif; ?>
 
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
