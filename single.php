@@ -20,10 +20,11 @@ get_header(); ?>
         <div class="row">
             <div class="span6 offset3" id="header-meta">
                 <h1 class="title"><?php the_title(); ?></h1>
-                <h3 class="subtitle">&laquo;<?php echo get_post_meta( $post->ID, 'name_of_wine', True ); ?>&raquo;</h3>
+                <h3 class="subtitle"><?php echo get_post_meta( $post->ID, 'name_of_wine', True ); ?></h3>
                 <ul id="sharing">
+                  <?php if ( get_post_meta( $post->ID, 'purchase_text', True ) ) : ?>
                     <li>
-                        <a href="<?php echo get_post_meta( $post->ID, 'purchase_link', True ); ?>" id="purchase-link">purchase: <?php echo get_post_meta( $post->ID, 'price', True ); ?></a>
+                        <a href="<?php echo get_post_meta( $post->ID, 'purchase_link', True ); ?>" id="purchase-link"><?php echo get_post_meta( $post->ID, 'purchase_text', True ); ?></a>
                     </li>
                     <li>
                          <!--or share:-->&nbsp;
@@ -31,6 +32,7 @@ get_header(); ?>
                     <li>
                          <!--or share:-->&nbsp;
                     </li>
+                  <?php endif; ?>
                     <li>
                         <a href="https://twitter.com/intent/tweet/?url=<?php echo urlencode( get_permalink($post->ID) ); ?>&text=<?php echo urlencode( the_title("", "", False) ); ?>&via=ansoniawines" target="_blank">
                             <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/twitter.png" id="twitter-icon" />
