@@ -108,7 +108,7 @@ a:hover{
     padding: 0 5px;
 }
 #purchase-link{
-    font-family: "Georgia", serif;
+    /*font-family: "Georgia", serif; */
     color: #0088cc;
     text-decoration: underline;
     font-size: 1.2em;
@@ -128,14 +128,14 @@ h1.title{
     margin-bottom: 0px;
     font-size: 28px;
     line-height: 32px;
-    font-family: "Georgia", serif;
+    /*font-family: "Georgia", serif;*/
     font-weight: 100;
 }
 h3.subtitle{
     margin-bottom: 0px;
     font-size: 20px;
     line-height: 24px;
-    font-family: "Georgia", serif;
+    /*font-family: "Georgia", serif;*/
     font-weight: 100;
 }
 
@@ -167,7 +167,7 @@ p{ /*
 #sidebar h3{
     font-size: 18px;
     line-height: 24px;
-    font-family: "Georgia", serif
+    /*font-family: "Georgia", serif*/
 }
 #sidebar li{
     max-width: 350px;
