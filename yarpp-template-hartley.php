@@ -1,4 +1,5 @@
 <?php if (have_posts()):?>
+<strong>Related Posts</strong>
 <div class="row" id="related-posts">
     <?php while (have_posts()) : the_post(); ?>
     <div class="span3">
