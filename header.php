@@ -34,9 +34,9 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
     <![endif]-->
     
-    <link rel="stylesheet" href="/wp-content/themes/_s/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/wp-content/themes/_s/bootstrap/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="/wp-content/themes/_s/style.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/_s/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/_s/bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/_s/style.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
     
     <?php wp_head(); ?>
@@ -48,7 +48,7 @@
         <div id="navigation" class="clearfix">
 			<ul id="links">
                 <!-- navigation links -->
-                <?php get_links(3, '<li class="nav-link link">', '</li>', '', TRUE, 'url', TRUE); ?>
+                <?php get_links(3, '<li class="nav-link link">', '</li>', '', TRUE, 'rating', TRUE); ?>
                 <!-- social links -->
                 <?php get_links(4, '<li class="social-link link hidden-phone">', '</li>', '', TRUE, 'url', TRUE); ?>
 			</ul>

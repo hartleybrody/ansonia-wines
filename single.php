@@ -43,6 +43,11 @@ get_header(); ?>
                             <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/facebook.png"  id="facebook-icon" />
                         </a>
                     </li>
+                    <li>
+                        <a href="mailto:?subject=Check%20out%20'<?php the_title(); ?>'&body=<?php echo urlencode( get_permalink($post->ID) ); ?>" target="_blank">
+                            <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/fwd.png"  id="email-icon" />
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

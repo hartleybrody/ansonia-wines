@@ -139,9 +139,13 @@ h3.subtitle{
     font-weight: 100;
 }
 
-p{
+#purchase-link{
+    color: #336699
+}
+
+p{ /*
     font-family: "Georgia", serif;
-    line-height: 1.8em;
+    line-height: 1.8em; */
 }
 
 #footer-meta{
