@@ -20,6 +20,11 @@ get_header(); ?>
         <div class="row">
             <div class="span6 offset3" id="header-meta">
                 <h1 class="title"><?php the_title(); ?></h1>
+                
+                <div id="byline">
+                    <?php the_time('l, F j, Y') ?>
+                </div>
+                
                 <h3 class="subtitle"><?php echo get_post_meta( $post->ID, 'name_of_wine', True ); ?></h3>
                 <ul id="sharing">
                   <?php if ( get_post_meta( $post->ID, 'purchase_text', True ) ) : ?>
@@ -56,10 +61,6 @@ get_header(); ?>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <?php the_content(); ?>
                 </article>
-                <div id="footer-meta">
-                    Posted <?php the_time('l') ?>
-                    <?php edit_post_link( __( 'Edit', '_s' ), '<span class="edit-link">', '</span>' ); ?>
-                </div>
             </div>
             <div class="span3 offset1">
                 <?php get_sidebar(); ?>
