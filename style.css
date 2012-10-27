@@ -133,14 +133,15 @@ h1.title{
     font-size: 28px;
     line-height: 32px;
     /*font-family: "Georgia", serif;*/
-    font-weight: 100;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
 }
 h3.subtitle{
     margin-bottom: 0px;
     font-size: 20px;
     line-height: 24px;
     /*font-family: "Georgia", serif;*/
-    font-weight: 100;
+    text-rendering: optimizeLegibility;
 }
 
 #purchase-link{
