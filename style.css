@@ -90,10 +90,14 @@ a:hover{
 /****************************************************
     archive.php
 ****************************************************/
-.excerpt{
+.archive-header{
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #888; 
+}
+.excerpt{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 .excerpt .post-title{
     font-family: "Georgia", serif;
