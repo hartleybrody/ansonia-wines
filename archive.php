@@ -77,8 +77,49 @@ get_header(); ?>
 						 * If you want to overload this in a child theme then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						get_template_part( 'content', get_post_format() );
+						// get_template_part( 'content', get_post_format() );
 					?>
+                    
+                    <div class="row excerpt">
+                        <div class="span4">
+                            <a href="<?php the_permalink() ?>">
+                                <img src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" class="tile-post-img <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>" />
+                            </a>
+                        </div><!--.span4-->
+                        <div class="span8">
+                            <div class="excerpt-header">
+                                <span class="categories"><?php 
+                                
+                                    $categories = get_the_category( $post->ID );
+                                    if (count($categories) == 1){
+                                        print $categories[0]->name;
+                                    }
+                                    else{
+                                        $str = "";
+                                        
+                                        foreach($categories as $cat){
+                                            $str .= $cat->name .= ", ";
+                                        }
+                                        
+                                        $final_str = rtrim($str, ", "); // remove last ", "
+                                        echo $final_str;
+                                    }
+                                ?></span> | 
+                                <span class="date-time">
+                                    <?php the_time('l, F jS, Y') ?>
+                                </span>
+                            </div>
+                            <a href="<?php the_permalink() ?>" class="post-title">
+                                <?php the_title(); ?>
+                            </a><br>
+                            <a href="<?php the_permalink() ?>" class="name-of-wine">
+                                <?php echo get_post_meta( $post->ID, 'name_of_wine', True ); ?>
+                            </a>
+                            <?php the_excerpt(); ?>
+                            <br>
+                            <a href="<?php the_permalink() ?>">Read more...</a>
+                        </div><!--.span4-->
+                    </div><!--.row-->
 
 				<?php endwhile; ?>
 
