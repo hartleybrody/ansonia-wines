@@ -65,8 +65,6 @@ get_header(); ?>
             ?>
         </header><!-- .page-header -->
 
-        <?php _s_content_nav( 'nav-above' ); ?>
-
         <div class="row">
             <div class="span9">
                 <?php /* Start the Loop */ ?>
