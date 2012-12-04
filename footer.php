@@ -24,9 +24,6 @@
         );
     </script>
     
-    <!-- referral tracking code -->
-    <script type="text/javascript"> var _vouchfor_config = _vouchfor_config || {}; _vouchfor_config.campaignTag = "Ansonia-Wines"; _vouchfor_config.offer = "$10 Off"; _vouchfor_config.position = "left-pos"; _vouchfor_config.host = "http://vouchfor.com"; _vouchfor_config.analytics = "https://ssl.google-analytics.com/__utm.gif?utms=1&utmhn=vouchfor.com&utmp=%2FAnsonia-Wines%2Fwidget%2Fvisit&utmac=UA-23418569-1&utmt=event&utme=5%28widget*open%20widget*Ansonia%20Wines%29%284114922%29";(function() {var vfjs = document.createElement('script'); vfjs.type = 'text/javascript'; vfjs.async = true; vfjs.src = 'http://vouchfor.com/js/vouchfor-widget/vouchfor-widget.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vfjs, s);})();</script>
-
     <!-- google analytics -->
     <script type="text/javascript">
 
