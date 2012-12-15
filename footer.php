@@ -13,13 +13,15 @@
         $(".hover-swap").hover( 
             function(obj){ // in handler
                 imgSrc = $(this).attr("src");
-                newImgSrc = imgSrc.split(".jpg")[0] + "-hover.jpg";
-                $(this).attr("src", newImgSrc);
+                altImgSrc = $(this).attr("data-alt-src");
+                $(this).attr("src", altImgSrc);
+                $(this).attr("data-alt-src", imgSrc);
             }, 
             function(obj){ // out handler
                 imgSrc = $(this).attr("src");
-                newImgSrc = imgSrc.split("-hover.jpg")[0] + ".jpg";
-                $(this).attr("src", newImgSrc);
+                altImgSrc = $(this).attr("data-alt-src");
+                $(this).attr("src", altImgSrc);
+                $(this).attr("data-alt-src", imgSrc);
             }
         );
     </script>

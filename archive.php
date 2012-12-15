@@ -81,7 +81,12 @@ get_header(); ?>
                     <div class="row excerpt">
                         <div class="span4">
                             <a href="<?php the_permalink() ?>">
-                                <img src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" class="tile-post-img <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>" />
+                                <img 
+                                    src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" 
+                                    class="tile-post-img 
+                                        <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>"
+                                    <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "data-alt-src='" . get_post_meta( $post->ID, 'tile_banner_hover', True ) . "'"; }?> 
+                                />
                             </a>
                         </div><!--.span4-->
                         <div class="span5">

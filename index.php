@@ -32,7 +32,12 @@ get_header(); ?>
                         <div class="row">
                             <div class="span12" id="featured-post">
                                 <a href="<?php the_permalink() ?>" >
-                                    <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" id="featured-post-img" <?php if( get_post_meta( $post->ID, 'full_banner_hover', True ) ){ echo "class=\"hover-swap\""; } else {echo "class=\"hover-fade\"";} ?>/>
+                                        <img 
+                                            src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" 
+                                            class="tile-post-img 
+                                                <?php if( get_post_meta( $post->ID, 'full_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>"
+                                            <?php if( get_post_meta( $post->ID, 'full_banner_hover', True ) ){ echo "data-alt-src='" . get_post_meta( $post->ID, 'full_banner_hover', True ) . "'"; }?> 
+                                        />
                                 </a><br>
                                 <a href="<?php the_permalink() ?>" id="featured-post-title">
                                     <?php the_title(); ?>
@@ -46,7 +51,12 @@ get_header(); ?>
                         <?php endif; ?>
                                 <div class="span4 tile">
                                     <a href="<?php the_permalink() ?>" >
-                                        <img src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" class="tile-post-img <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>" />
+                                        <img 
+                                            src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" 
+                                            class="tile-post-img 
+                                                <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>"
+                                            <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "data-alt-src='" . get_post_meta( $post->ID, 'tile_banner_hover', True ) . "'"; }?> 
+                                        />
                                     </a><br>
                                     <a href="<?php the_permalink() ?>" class="tile-title">
                                         <?php the_title(); ?>
