@@ -141,10 +141,10 @@ a:hover{
 }
 #byline{
     font-size: 0.8em;
-    color: #ccc;
+    color: #aaa;
 }
 #sharing{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #sharing li{
     display: inline;
@@ -171,16 +171,14 @@ a:hover{
 h1.title{
     margin-bottom: 0px;
     font-size: 28px;
-    line-height: 32px;
-    /*font-family: "Georgia", serif;*/
+    line-height: 30px;
     font-weight: bold;
     text-rendering: optimizeLegibility;
 }
 h3.subtitle{
     margin-bottom: 0px;
     font-size: 20px;
-    line-height: 24px;
-    /*font-family: "Georgia", serif;*/
+    line-height: 22px;
     text-rendering: optimizeLegibility;
 }
 
