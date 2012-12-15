@@ -114,12 +114,14 @@ get_header(); ?>
                                 <?php echo get_post_meta( $post->ID, 'name_of_wine', True ); ?>
                             </a>
                             <?php the_excerpt(); ?>
-                            <br>
-                            <a href="<?php the_permalink() ?>">Read more...</a>
+                            <a href="<?php the_permalink() ?>" class="read-more">Read more...</a>
                         </div><!--.span4-->
                     </div><!--.row-->
 
                 <?php endwhile; ?>
+                <div class="pagination">
+                    <?php posts_nav_link(); ?> 
+                </div>
             </div><!--.span9-->
             <div class="span3">
                 <?php get_sidebar(); ?>
