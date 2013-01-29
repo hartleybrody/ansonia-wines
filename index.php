@@ -70,9 +70,10 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 				<div id="index-pagination">
-					<div style="float:left;"><?php previous_posts_link('&laquo; Later Posts', 0) ?></div>
+					<!--<div style="float:left;"><?php previous_posts_link('&laquo; Later Posts', 0) ?></div>-->
 					&nbsp;
-					<div style="float:right;"><?php next_posts_link('Earlier Posts &raquo;', 0) ?></div>
+					<!--<div style="float:right;"><?php next_posts_link('Earlier Posts &raquo;', 0) ?></div>-->
+					<div style="float:right;"><a href="/author/ansoniawines/page/2/">Earlier Posts &raquo;</a></div>
 				</div>
 
 			<?php else : ?>

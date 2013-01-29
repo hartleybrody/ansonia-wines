@@ -13,7 +13,7 @@ get_header(); ?>
 
     <?php if ( have_posts() ) : ?>
 
-        <header class="archive-header">
+        <!--<header class="archive-header">
             <h1 class="archive-title">
                 <?php
                     if ( is_category() ) {
@@ -63,7 +63,7 @@ get_header(); ?>
                         echo apply_filters( 'tag_archive_meta', '<div class="taxonomy-description">' . $tag_description . '</div>' );
                 }
             ?>
-        </header><!-- .page-header -->
+        </header>--> <!-- .page-header -->
 
         <div class="row">
             <div class="span9">
