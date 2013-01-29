@@ -125,7 +125,11 @@ get_header(); ?>
 
                 <?php endwhile; ?>
                 <div class="pagination">
-                    <?php posts_nav_link(); ?> 
+				<div id="pagination">
+					<div style="float:left;"><?php previous_posts_link('&laquo; Later Posts', 0) ?></div>
+					&nbsp;
+					<div style="float:right;"><?php next_posts_link('Earlier Posts &raquo;', 0) ?></div>
+				</div>
                 </div>
             </div><!--.span9-->
             <div class="span3">

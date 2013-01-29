@@ -69,6 +69,11 @@ get_header(); ?>
                     <?php endif; ?>
 
 				<?php endwhile; ?>
+				<div id="index-pagination">
+					<div style="float:left;"><?php previous_posts_link('&laquo; Later Posts', 0) ?></div>
+					&nbsp;
+					<div style="float:right;"><?php next_posts_link('Earlier Posts &raquo;', 0) ?></div>
+				</div>
 
 			<?php else : ?>
 

@@ -91,6 +91,12 @@ a:hover{
     text-decoration: none;
 }
 
+#index-pagination {
+    border-top: 1px solid #888;
+    margin-top: 10px;
+    padding-top: 10px
+}
+
 
 /****************************************************
     archive.php
@@ -110,6 +116,7 @@ a:hover{
     line-height: 1.2em;
     display: inline-block;
     margin-bottom: 5px;
+	color: #333;
 }
 .excerpt .name-of-wine{
 }
