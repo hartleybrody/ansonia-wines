@@ -83,9 +83,7 @@ get_header(); ?>
                             <a href="<?php the_permalink() ?>">
                                 <img 
                                     src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" 
-                                    class="tile-post-img 
-                                        <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>"
-                                    <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "data-alt-src='" . get_post_meta( $post->ID, 'tile_banner_hover', True ) . "'"; }?> 
+                                    class="tile-post-img hover-fade"
                                 />
                             </a>
                         </div><!--.span4-->
