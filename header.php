@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-  	<meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -45,13 +45,37 @@
 <body <?php body_class(); ?>>
 
     <div class="container">
-        <div id="navigation" class="clearfix">
-			<ul id="links">
-                <!-- navigation links -->
-                <?php get_links(3, '<li class="nav-link link">', '</li>', '', TRUE, 'rating', TRUE); ?>
-                <!-- social links -->
-                <?php get_links(4, '<li class="social-link link hidden-phone">', '</li>', '', TRUE, 'url', TRUE); ?>
-			</ul>
-		</div><!-- #navigation -->
+        <div id="navigation" class="row clearfix">
+            <div class="span8">
+                <h1 id="site-title"><?php bloginfo( 'name' ); ?></h1>
+                <ul id="links">
+                    <!-- navigation links -->
+                    <?php 
+                        $bookmarks_args = array(
+                            'limit' => -1, 
+                            'category' => 3, 
+                            );
+                        $bookmarks = get_bookmarks($bookmarks_args);
+                        foreach ($bookmarks as $bookmark) {
+                            $bookmark_repr = '<li class="link"><a href="' . $bookmark->link_url . '">' . $bookmark->link_name . '</a></li>';
+                            echo($bookmark_repr);
+                        }
+                        //wp_list_bookmarks(3, '<li class="nav-link link">', '</li>', '', TRUE, 'rating', TRUE); 
+                    ?>
+                    <!-- social links -->
+                    <!--<?php //get_links(4, '<li class="social-link link hidden-phone">', '</li>', '', TRUE, 'url', TRUE); ?>-->
+                </ul>
+            </div><!--.span8-->
+            <div class="span4">
+                <p class="contact-info">
+                    (202) 506-4215<br>
+                    <a href="mailto:tom@ansoniawines.com">tom@ansoniawines.com<br>
+                    <a href="https://www.twitter.com/ansoniawines">@ansoniawines</a><br>
+                    <a href="???" class="subscribe-link">Sign up for our posts</a>
+                </p>
+            </div><!--.span4-->
+        </div><!-- #navigation.row -->
+
+        <hr />
 
         <div id="content">

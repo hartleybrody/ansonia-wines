@@ -1,3 +1,6 @@
+body{
+    margin:20px 0;
+}
 
 a{ 
     color: #888;
@@ -11,8 +14,14 @@ a:hover{
     header stuff
 **/
 
+#site-title{
+    font-size: 4.8em;
+    text-transform: uppercase;
+    font-family: serif;
+    font-weight: 100;
+}
+
 #navigation {
-    border-bottom: 1px solid #888;
     margin-bottom: 10px
 }
 #navigation  #links{
@@ -22,9 +31,13 @@ a:hover{
     list-style-type: none;
     padding: 5px 10px;
     text-transform: uppercase;
+    font-family: serif;
+    font-weight: 100;
+    float: left;
+    font-size: 1.2em;
 }
-#navigation  .link.nav-link { float: left }
-#navigation  .link.social-link { float: right }
+#navigation  .link:first-child{padding-left: 0}
+
 #navigation  .link a{
     color: #888;
     font-weight: 700;
@@ -33,11 +46,23 @@ a:hover{
     color: #333;
     text-decoration: none;
 }
+#navigation .contact-info{
+    text-align: right;
+    font-style: italic;
+    font-family: serif;
+    color: #888;
+    font-weight: 700;
+    font-size: 1.0em;
+}
+#navigation .contact-info .subscribe-link{
+    font-style:normal;
+    text-transform: uppercase;
+    font-family: serif;
+    font-weight: 100;
+    color: #333;
 
-#logo-banner{
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #888;
+    display: inline-block;
+    margin-top: 5px;
 }
 
 #footer{
