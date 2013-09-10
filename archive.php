@@ -10,6 +10,13 @@
 
 get_header(); ?>
 
+        <div class="row clearfix">
+            <div class="span12" id="logo-banner">
+                <a href="<?php echo home_url(); ?>">
+                    <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/logo.jpg" />
+                </a>
+            </div>
+        </div>
 
     <?php if ( have_posts() ) : ?>
 
