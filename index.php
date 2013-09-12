@@ -34,7 +34,7 @@ get_header(); ?>
                                         />
                                     </a>
                                 </div>
-                                <div class="span4">
+                                <div class="span5">
                                     <span class="post-date">
                                         <?php echo get_the_date('l F j, Y'); ?>
                                     </span>
@@ -82,7 +82,7 @@ get_header(); ?>
                     <?php endif; ?>
                 </div><!--.span8#main-content-->
                 <div class="span4">
-                    <h3>Sidebar</h3>
+                    <?php get_sidebar(); ?>
                 </div><!--.span8#main-content-->
             </div>
 
