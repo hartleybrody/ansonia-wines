@@ -88,6 +88,10 @@ a:hover{
     padding-top: 10px
 }
 
+.post{
+    margin-bottom: 20px;
+}
+
 .post-title{
     color: #993333;
     font-family: serif;
@@ -102,6 +106,7 @@ a:hover{
 
 .post-read-more{
     text-align:right;
+    margin-bottom: 10px;
 }
 
 .post-read-more a{
@@ -114,6 +119,14 @@ a:hover{
     text-transform: uppercase;
     font-family: serif;
     font-weight: 700;
+}
+
+.post-custom-field-value{
+    color: #333;
+}
+
+a.post-custom-field-value:hover{
+    color: #888;
 }
 
 

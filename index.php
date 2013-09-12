@@ -36,16 +36,32 @@ get_header(); ?>
                                 </div>
                                 <div class="span4">
                                     <span class="post-date">
-                                        September 11, 2013
+                                        <?php echo get_the_date('l F j, Y'); ?>
                                     </span>
                                     <p class="post-preview">
-                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                                        <?php echo get_the_excerpt(); ?>
                                     </p>
                                     <div class="post-read-more">
                                         <a href="<?php the_permalink() ?>">read more ></a>
                                     </div>
                                     <div class="post-custom-field">
-                                        <span class="post-custom-field-value">Font Du Loup</span>
+                                        <?php 
+                                            $purchase_link = get_post_meta( $post->ID, 'purchase_link', True );
+                                            if($purchase_link){
+                                                echo '<a href="' . $purchase_link . '"';
+                                            } else{
+                                                echo '<span';
+                                            }
+                                        ?> class="post-custom-field-value">
+                                            <?php echo get_post_meta( $post->ID, 'name_of_wine', True ); ?>
+                                        <?php 
+                                            $purchase_link = get_post_meta( $post->ID, 'purchase_link', True );
+                                            if($purchase_link){
+                                                echo '</a>';
+                                            } else{
+                                                echo '</span>';
+                                            }
+                                        ?>
                                     </div>
                                 </div>
                             </div> <!--.row.post-->
