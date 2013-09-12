@@ -82,44 +82,38 @@ a:hover{
 /****************************************************
     index.php
 ****************************************************/
-#featured-post{
-    text-align: right;
-}
-#featured-post-title{
-    text-transform: uppercase;
-    font-size: 1.5em;
-    line-height: 2.0em;
-    
-    display:block;
-    margin-bottom: 20px;
-}
-.tiles{
-    margin-bottom: 30px;
-}
-.tile{
-    text-align: right;
-}
-.tile-title{
-    text-transform: uppercase;
-    color: #888;
-    font-weight: 700;
-    
-    display: block;
-    max-width: 350px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-.tile-title:hover{ 
-    color: #333;
-    text-decoration: none;
-}
-
 #index-pagination {
     border-top: 1px solid #888;
     margin-top: 10px;
     padding-top: 10px
+}
+
+.post-title{
+    color: #993333;
+    font-family: serif;
+    font-weight: 100;
+}
+
+.post-date{
+    color: #aaa;
+    font-family: serif;
+    font-weight: 100;
+}
+
+.post-read-more{
+    text-align:right;
+}
+
+.post-read-more a{
+    color: #339999;
+    font-family: serif;
+    font-weight: 100;
+}
+
+.post-custom-field{
+    text-transform: uppercase;
+    font-family: serif;
+    font-weight: 700;
 }
 
 
