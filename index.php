@@ -82,7 +82,7 @@ get_header(); ?>
                     <?php endif; ?>
                 </div><!--.span8#main-content-->
                 <div class="span4">
-                    <?php get_sidebar(); ?>
+                    <?php get_sidebar('homepage'); ?>
                 </div><!--.span8#main-content-->
             </div>
 

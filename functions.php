@@ -118,3 +118,8 @@ add_action( 'wp_enqueue_scripts', '_s_scripts' );
  * Implement the Custom Header feature
  */
 //require( get_template_directory() . '/inc/custom-header.php' );
+
+if ( function_exists('register_sidebar') ) {
+	register_sidebars(1, array('name'=>'Homepage'));
+	register_sidebars(1, array('name'=>'Post'));
+}

@@ -62,7 +62,7 @@ get_header(); ?>
                 </article>
             </div>
             <div class="span3 offset1">
-                <?php get_sidebar(); ?>
+                <?php get_sidebar('post'); ?>
             </div>
         </div>
     <?php endwhile; ?>
