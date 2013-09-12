@@ -16,28 +16,10 @@ get_header(); ?>
 
         
 			<?php if ( have_posts() ) : ?>
-                <?php $post_num = 0; ?>
+                <h2>Recent Posts</h2>
+                <?php $post_num = 1; ?>
 				<?php while ( have_posts() ) : the_post(); ?>
                     <?php $post_num += 1; ?>
-                    <?php if ( $post_num == 1): // this is the latest post, display as banner ?>
-                    
-                        <div class="row">
-                            <div class="span12" id="featured-post">
-                                <a href="<?php the_permalink() ?>" >
-                                        <img 
-                                            src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" 
-                                            class="tile-post-img 
-                                                <?php if( get_post_meta( $post->ID, 'full_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>"
-                                            <?php if( get_post_meta( $post->ID, 'full_banner_hover', True ) ){ echo "data-alt-src='" . get_post_meta( $post->ID, 'full_banner_hover', True ) . "'"; }?> 
-                                        />
-                                </a><br>
-                                <a href="<?php the_permalink() ?>" id="featured-post-title">
-                                    <?php the_title(); ?>
-                                </a>
-                            </div>
-                        </div>
-                        
-                    <?php else: // this is not the first post, display as a tile ?>
                         <?php if ( $post_num % 3 == 2): ?>
                             <div class="row tiles">
                         <?php endif; ?>
@@ -57,8 +39,6 @@ get_header(); ?>
                         <?php if ( $post_num % 3 == 1): ?>
                             </div> <!--.row.tiles-->
                         <?php endif; ?>
-                        
-                    <?php endif; ?>
 
 				<?php endwhile; ?>
 				<div id="index-pagination">
