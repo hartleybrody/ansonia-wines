@@ -173,61 +173,9 @@ a.post-custom-field-value:hover{
 /****************************************************
     single.php
 ****************************************************/
-#article-banner{
-    margin-bottom: 20px;
-}
-#header-meta{
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #888;
-    
-    text-align: center;
-}
 #byline{
     font-size: 0.8em;
     color: #aaa;
-}
-#sharing{
-    margin-top: 10px;
-}
-#sharing li{
-    display: inline;
-    list-style-type: none;
-    padding: 0 5px;
-}
-#purchase-link{
-    /*font-family: "Georgia", serif; */
-    color: #0088cc;
-    text-decoration: underline;
-    font-size: 1.2em;
-}
-#purchase-link:hover{
-    color: #005580;
-    text-decoration: none;
-}
-#twitter-icon, #facebook-icon{
-    width: 40px;
-    opacity: 0.8;
-}
-#twitter-icon:hover, #facebook-icon:hover{
-    opacity: 0.9;
-}
-h1.title{
-    margin-bottom: 0px;
-    font-size: 28px;
-    line-height: 30px;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
-h3.subtitle{
-    margin-bottom: 0px;
-    font-size: 20px;
-    line-height: 22px;
-    text-rendering: optimizeLegibility;
-}
-
-#purchase-link{
-    color: #336699
 }
 
 p{ /*
@@ -246,15 +194,19 @@ p{ /*
 /****************************************************
     sidebar.php
 ****************************************************/
-#sidebar h3{
-    font-size: 18px;
-    line-height: 24px;
-    /*font-family: "Georgia", serif*/
-}
-#sidebar li{
-    max-width: 350px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+
+li.widget{
     list-style-type: none;
+}
+h2.widgettitle{
+    font-family: serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+
+    border-top: 2px solid #888;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+h2.widgettitle:first-child{
+    margin-top: 0;
 }
