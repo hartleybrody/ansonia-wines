@@ -46,7 +46,7 @@
 
     <div class="container">
         <div id="navigation" class="row clearfix">
-            <div class="span8">
+            <div class="span8" id="header">
                 <h1 id="site-title"><?php bloginfo( 'name' ); ?></h1>
                 <ul id="links">
                     <!-- navigation links -->
