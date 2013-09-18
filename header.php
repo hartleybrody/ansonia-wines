@@ -67,8 +67,8 @@
                 </ul>
             </div><!--.span8-->
             <div class="span4">
-                <p class="contact-info">
-                    (202) 506-4215<br>
+                <p class="contact-info visible-desktop">
+                    <span>(202) 506-4215</span><br>
                     <a href="mailto:tom@ansoniawines.com">tom@ansoniawines.com<br>
                     <a href="https://www.twitter.com/ansoniawines">@ansoniawines</a><br>
                     <a href="???" class="subscribe-link">Sign up for our posts</a>

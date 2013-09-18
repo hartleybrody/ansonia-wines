@@ -15,9 +15,9 @@ a:hover{
 **/
 
 #site-title{
-    font-size: 4.8em;
+    font-size: 4.0em;
     text-transform: uppercase;
-    font-family: serif;
+    font-family: 'Times New Roman', serif;
     font-weight: 100;
 }
 
@@ -31,10 +31,10 @@ a:hover{
     list-style-type: none;
     padding: 5px 10px;
     text-transform: uppercase;
-    font-family: serif;
+    font-family: 'Georgia', serif;
     font-weight: 100;
     float: left;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 #navigation  .link:first-child{padding-left: 0}
 
@@ -46,12 +46,13 @@ a:hover{
     color: #333;
     text-decoration: none;
 }
-#navigation .contact-info{
+#navigation .contact-info {
     text-align: right;
-    font-style: italic;
-    font-family: serif;
-    color: #888;
-    font-weight: 700;
+}
+#navigation .contact-info span, #navigation .contact-info a {
+    font-family: 'Georgia', serif;
+    color: #999;
+    font-weight: 100;
     font-size: 1.0em;
 }
 #navigation .contact-info .subscribe-link{
@@ -59,10 +60,13 @@ a:hover{
     text-transform: uppercase;
     font-family: serif;
     font-weight: 100;
-    color: #333;
+    color: #990000;
 
     display: inline-block;
     margin-top: 5px;
+}
+#navigation .contact-info .subscribe-link:hover{
+    text-decoration: underline;
 }
 
 #footer{
@@ -88,6 +92,12 @@ a:hover{
     padding-top: 10px
 }
 
+.page-title{
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+    font-size: 1.8em;
+}
+
 .post{
     margin-bottom: 20px;
 }
@@ -102,10 +112,18 @@ a:hover{
     color: #aaa;
     font-family: serif;
     font-weight: 100;
+    font-size: 0.9em;
+
+    display: block;
+    margin-top: -2px;
+}
+
+.post-preview{
+    font-family: 'Georgia', serif;
 }
 
 .post-read-more{
-    text-align:right;
+    text-align: right;
     margin-bottom: 10px;
 }
 
@@ -113,6 +131,7 @@ a:hover{
     color: #339999;
     font-family: serif;
     font-weight: 100;
+    font-style: italic;
 }
 
 .post-custom-field{
