@@ -65,18 +65,77 @@
                         ?>
                     </li>
                     <li class="widget">
-                        <h2 class="widgettitle">Other Wines from this Region</h2>
+                        <h2 class="widgettitle">Other Posts About This Vigneron</h2>
                         <?php 
-                            $category = get_cat_ID();
-                            $posts = get_posts( array('category' => $category) );
+                            $results = get_terms('vigneron');
+                            //print_r($results);
+
+                            $first_key = key($results);
+                            $slug = $results[$first_key]->slug;
+                            echo("<p class='lead'>\n");
+                            echo($results[0]->description);
+                            echo("</p>\n");
+
+                            $args = array(
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'vigneron',
+                                        'field' => 'slug',
+                                        'terms' => $slug
+                                    )
+                                ),
+                                'numberposts' => 5
+                            );
+                            $posts = get_posts( $args );
+
+                            echo("<ul>\n");
                             foreach ($posts as $post) {
-                                # code...
+                                echo("<li>\n");
+                                echo("<a href='" . get_permalink($post->ID) . "'>");
                                 echo get_the_title($post->ID);
-                                echo "<br>";
+                                echo("</a>\n");
+                                echo("</li>\n");
                             }
+                            echo("</ul>");
 
                         ?>
                     </li>
+                    <!--<li class="widget">
+                        <h2 class="widgettitle">Winemaker Profile</h2>
+                        <?php 
+                            $results = get_the_terms($post->ID, 'winemaker');
+                            print_r($results);
+                           
+                            $first_key = key($results);
+                            $slug = $results[$first_key]->slug;
+                            echo("<p class='lead'>");
+                            echo($results[0]->description);
+                            echo("</p>");
+
+                            $args = array(
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'winemaker',
+                                        'field' => 'slug',
+                                        'terms' => $slug
+                                    )
+                                ),
+                                'numberposts' => 5
+                            );
+                            $posts = get_posts( $args );
+
+                            echo("<ul>");
+                            foreach ($posts as $post) {
+                                echo("<li>");
+                                echo("<a href='" . get_permalink($post->ID) . "'>");
+                                echo get_the_title($post->ID);
+                                echo("</a>");
+                                echo("</li>");
+                            }
+                            echo("</ul>");
+
+                        ?>
+                    </li>-->
                     <?php dynamic_sidebar( 'post' ); ?>
                 </ul>
             </div>

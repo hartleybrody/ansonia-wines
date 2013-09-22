@@ -10,6 +10,14 @@ a:hover{
     color: #333;
     text-decoration: none;
 }
+.alignleft{
+    float:left;
+    padding-right: 10px;
+}
+.alignright{
+    float:right;
+    padding-left: 10px;
+}
 /**
     header stuff
 **/
@@ -128,7 +136,7 @@ a:hover{
 }
 
 .post-read-more a{
-    color: #339999;
+    color: #006699;
     font-family: serif;
     font-weight: 100;
     font-style: italic;
@@ -216,6 +224,7 @@ p{ /*
 
 li.widget{
     list-style-type: none;
+    margin-bottom: 20px;
 }
 h2.widgettitle{
     font-family: serif;
@@ -228,6 +237,27 @@ h2.widgettitle{
 }
 h2.widgettitle:first-child{
     margin-top: 0;
+}
+
+.widget h3{
+    font-size: 1.0em;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', serif;
+}
+
+#sidebar a{
+    color: #006699;;
+}
+
+#sidebar a:hover{
+    text-decoration: underline;
+}
+
+#sidebar .lead{
+    font-size: 1.0em;
+    color: #888;
+    font-style: italic;
+    font-family: 'Georgia', serif;
 }
 
 /****************************************************

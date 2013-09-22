@@ -123,3 +123,29 @@ if ( function_exists('register_sidebar') ) {
 	register_sidebars(1, array('name'=>'Homepage'));
 	register_sidebars(1, array('name'=>'Post'));
 }
+
+// Custom Taxonomy Code  
+add_action( 'init', 'build_taxonomies', 0 );  
+  
+function build_taxonomies() {
+    register_taxonomy(
+    	'vigneron',
+    	'post',
+    	array(
+    		'hierarchical' => false,
+    		'label' => 'Vigneron',
+    		'query_var' => true,
+    		'rewrite' => true
+    	)
+    );
+    register_taxonomy(
+    	'winemaker',
+    	'post',
+    	array(
+    		'hierarchical' => false,
+    		'label' => 'Wine Maker',
+    		'query_var' => true,
+    		'rewrite' => true
+    	)
+    );
+}
