@@ -15,7 +15,7 @@
 get_header(); ?>
 
             <div class="row">
-                <div class="span8" id="main-content">
+                <div class="col-lg-8" id="main-content">
                     <?php if ( have_posts() ) : ?>
                         <h2 class="page-title">Recent Posts</h2>
                         <?php $post_num = 1; ?>
@@ -24,17 +24,17 @@ get_header(); ?>
                                 <h3 class="post-title"><?php the_title(); ?></h3>
                             </a>
                             <div class="row post">
-                                <div class="span2">
+                                <div class="col-lg-4">
                                     <a href="<?php the_permalink() ?>" >
                                         <img 
                                             src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" 
-                                            class="tile-post-img 
+                                            class="tile-post-img img-responsive 
                                                 <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>"
                                             <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "data-alt-src='" . get_post_meta( $post->ID, 'tile_banner_hover', True ) . "'"; }?> 
                                         />
                                     </a>
                                 </div>
-                                <div class="span5">
+                                <div class="col-lg-8">
                                     <span class="post-date">
                                         <?php echo get_the_date('l F j, Y'); ?>
                                     </span>
@@ -81,7 +81,7 @@ get_header(); ?>
 
                     <?php endif; ?>
                 </div><!--.span8#main-content-->
-                <div class="span4">
+                <div class="col-lg-4">
                     <?php get_sidebar('homepage'); ?>
                 </div><!--.span8#main-content-->
             </div>

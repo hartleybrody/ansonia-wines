@@ -45,9 +45,9 @@
 
     <div class="container">
         <div id="navigation" class="row clearfix">
-            <div class="span8" id="header">
+            <div class="col-lg-8 col-sm-12" id="header">
                 <h1 id="site-title"><?php bloginfo( 'name' ); ?></h1>
-                <ul id="links">
+                <ul id="links list-inline">
                     <!-- navigation links -->
                     <?php 
                         $bookmarks_args = array(
@@ -61,11 +61,9 @@
                         }
                         //wp_list_bookmarks(3, '<li class="nav-link link">', '</li>', '', TRUE, 'rating', TRUE); 
                     ?>
-                    <!-- social links -->
-                    <!--<?php //get_links(4, '<li class="social-link link hidden-phone">', '</li>', '', TRUE, 'url', TRUE); ?>-->
                 </ul>
             </div><!--.span8-->
-            <div class="span4">
+            <div class="col-lg-4 hidden-sm">
                 <p class="contact-info visible-desktop">
                     <span>(202) 506-4215</span><br>
                     <a href="mailto:tom@ansoniawines.com">tom@ansoniawines.com<br>
