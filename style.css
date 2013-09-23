@@ -260,6 +260,13 @@ h2.widgettitle:first-child{
     font-family: 'Georgia', serif;
 }
 
+#sidebar .key{
+    font-family: serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: #888;
+}
+
 /****************************************************
     responsive
 ****************************************************/
