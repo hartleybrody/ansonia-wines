@@ -100,11 +100,11 @@
 
                         ?>
                     </li>
-                    <!--<li class="widget">
+                    <li class="widget">
                         <h2 class="widgettitle">Winemaker Profile</h2>
                         <?php 
-                            $results = get_the_terms($post->ID, 'winemaker');
-                            print_r($results);
+                            $results = get_terms('winemaker');
+                            //print_r($results);
                            
                             $first_key = key($results);
                             $slug = $results[$first_key]->slug;
@@ -135,7 +135,7 @@
                             echo("</ul>");
 
                         ?>
-                    </li>-->
+                    </li>
                     <?php dynamic_sidebar( 'post' ); ?>
                 </ul>
             </div>
