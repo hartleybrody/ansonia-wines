@@ -1,7 +1,7 @@
         
         </div><!-- #content -->
         <div id="footer">
-            &copy; Ansonia Wines 2012
+            &copy; Ansonia Wines 2013
         </div>
         <?php wp_footer(); ?>
     </div><!-- .container -->
