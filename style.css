@@ -66,7 +66,7 @@ a:hover{
 #navigation .contact-info .subscribe-link{
     font-style:normal;
     text-transform: uppercase;
-    font-family: serif;
+    font-family: 'Georgia', serif;
     font-weight: 100;
     color: #990000;
 
@@ -112,13 +112,13 @@ a:hover{
 
 .post-title{
     color: #993333;
-    font-family: serif;
+    font-family: 'Georgia', serif;
     font-weight: 100;
 }
 
 .post-date{
     color: #aaa;
-    font-family: serif;
+    font-family: 'Georgia', serif;
     font-weight: 100;
     font-size: 0.9em;
 
@@ -137,14 +137,14 @@ a:hover{
 
 .post-read-more a{
     color: #006699;
-    font-family: serif;
+    font-family: 'Georgia', serif;
     font-weight: 100;
     font-style: italic;
 }
 
 .post-custom-field{
     text-transform: uppercase;
-    font-family: serif;
+    font-family: 'Georgia', serif;
     font-weight: 700;
 }
 
@@ -227,9 +227,10 @@ li.widget{
     margin-bottom: 20px;
 }
 h2.widgettitle{
-    font-family: serif;
+    font-family: 'Georgia', serif;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.0em;
+    line-height: 1.2em;
 
     border-top: 2px solid #888;
     padding-top: 5px;
@@ -255,16 +256,21 @@ h2.widgettitle:first-child{
 
 #sidebar .lead{
     font-size: 1.0em;
+    line-height: 1.4em;
     color: #888;
     font-style: italic;
     font-family: 'Georgia', serif;
 }
 
 #sidebar .key{
-    font-family: serif;
+    font-family: 'Georgia', serif;
     text-transform: uppercase;
     font-size: 1.1em;
     color: #888;
+}
+
+#sidebar .value{
+    font-family: 'Georgia', serif;
 }
 
 /****************************************************
