@@ -70,7 +70,7 @@
                     <span>(202) 506-4215</span><br>
                     <a href="mailto:tom@ansoniawines.com">tom@ansoniawines.com<br>
                     <a href="https://www.twitter.com/ansoniawines">@ansoniawines</a><br>
-                    <a href="???" class="subscribe-link">Sign up for our posts</a>
+                    <a href="/follow/" class="subscribe-link">Sign up for our posts</a>
                 </p>
             </div><!--.span4-->
         </div><!-- #navigation.row -->
