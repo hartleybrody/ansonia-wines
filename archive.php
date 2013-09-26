@@ -66,7 +66,7 @@ get_header(); ?>
         </header>--> <!-- .page-header -->
 
         <div class="row">
-            <div class="span9">
+            <div class="span8">
                 <?php /* Start the Loop */ ?>
                 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -130,7 +130,7 @@ get_header(); ?>
 				</div>
                 </div>
             </div><!--.span9-->
-            <div class="span3">
+            <div class="span4">
                 <?php get_sidebar(); ?>
             </div>
         </div>
