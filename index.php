@@ -34,7 +34,7 @@ get_header(); ?>
                                         />
                                     </a>
                                 </div>
-                                <div class="span5">
+                                <div class="span6">
                                     <span class="post-date">
                                         <?php echo get_the_date('l F j, Y'); ?>
                                     </span>
