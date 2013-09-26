@@ -1,30 +1,12 @@
         
         </div><!-- #content -->
         <div id="footer">
-            &copy; Ansonia Wines 2012
+            &copy; Ansonia Wines 2013
         </div>
         <?php wp_footer(); ?>
     </div><!-- .container -->
   
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    
-    <!-- image swap -->
-    <script type="text/javascript">
-        $(".hover-swap").hover( 
-            function(obj){ // in handler
-                imgSrc = $(this).attr("src");
-                altImgSrc = $(this).attr("data-alt-src");
-                $(this).attr("src", altImgSrc);
-                $(this).attr("data-alt-src", imgSrc);
-            }, 
-            function(obj){ // out handler
-                imgSrc = $(this).attr("src");
-                altImgSrc = $(this).attr("data-alt-src");
-                $(this).attr("src", altImgSrc);
-                $(this).attr("data-alt-src", imgSrc);
-            }
-        );
-    </script>
     
     <!-- google analytics -->
     <script type="text/javascript">

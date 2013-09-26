@@ -72,9 +72,6 @@
 
                             $first_key = key($results);
                             $slug = $results[$first_key]->slug;
-                            echo("<p class='lead'>\n");
-                            echo($results[0]->description);
-                            echo("</p>\n");
 
                             $args = array(
                                 'tax_query' => array(
@@ -103,7 +100,7 @@
                     <li class="widget">
                         <h2 class="widgettitle">Winemaker Profile</h2>
                         <?php 
-                            $results = get_terms('winemaker');
+                            $results = get_terms('vigneron');
                             //print_r($results);
                            
                             $first_key = key($results);
@@ -111,28 +108,6 @@
                             echo("<p class='lead'>");
                             echo($results[0]->description);
                             echo("</p>");
-
-                            $args = array(
-                                'tax_query' => array(
-                                    array(
-                                        'taxonomy' => 'winemaker',
-                                        'field' => 'slug',
-                                        'terms' => $slug
-                                    )
-                                ),
-                                'numberposts' => 5
-                            );
-                            $posts = get_posts( $args );
-
-                            echo("<ul>");
-                            foreach ($posts as $post) {
-                                echo("<li>");
-                                echo("<a href='" . get_permalink($post->ID) . "'>");
-                                echo get_the_title($post->ID);
-                                echo("</a>");
-                                echo("</li>");
-                            }
-                            echo("</ul>");
 
                         ?>
                     </li>

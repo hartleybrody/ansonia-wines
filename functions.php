@@ -138,14 +138,4 @@ function build_taxonomies() {
     		'rewrite' => true
     	)
     );
-    register_taxonomy(
-    	'winemaker',
-    	'post',
-    	array(
-    		'hierarchical' => false,
-    		'label' => 'Wine Maker',
-    		'query_var' => true,
-    		'rewrite' => true
-    	)
-    );
 }
