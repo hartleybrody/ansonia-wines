@@ -55,6 +55,16 @@
                             'category' => 3, 
                             );
                         $bookmarks = get_bookmarks($bookmarks_args);
+
+                        // sort the order of the links by their rating
+                        function sort_by_rating($a, $b){
+                            if ($a->link_rating == $b->link_rating) {
+                                return 0;
+                            }
+                            return ($a->link_rating < $b->link_rating) ? -1 : 1;
+                        }
+                        usort($bookmarks, "sort_by_rating");
+                        
                         foreach ($bookmarks as $bookmark) {
                             $bookmark_repr = '<li class="link"><a href="' . $bookmark->link_url . '">' . $bookmark->link_name . '</a></li>';
                             echo($bookmark_repr);
