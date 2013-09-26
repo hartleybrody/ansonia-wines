@@ -207,9 +207,9 @@ a.post-custom-field-value:hover{
     color: #aaa;
 }
 
-p{ /*
+#post-content article{
     font-family: "Georgia", serif;
-    line-height: 1.8em; */
+    line-height: 1.8em; 
 }
 
 #related-posts{
@@ -219,6 +219,14 @@ p{ /*
     padding: 5px 0;
 }
 #related-posts .span3:first-child{ margin-left:0; }
+
+/****************************************************
+    page.php
+****************************************************/
+
+#page-content article{
+    font-family: 'Georgia', serif;
+}
 
 /****************************************************
     sidebar.php

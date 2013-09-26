@@ -12,7 +12,7 @@ get_header(); ?>
     <?php while (have_posts()) : the_post(); ?>
 
         <div class="row">
-            <div class="span6 offset1">
+            <div class="span6 offset1" id="post-content">
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" />
                     <h1 class="post-title"><?php the_title(); ?></h1>
