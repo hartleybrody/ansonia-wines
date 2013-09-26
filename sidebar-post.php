@@ -11,7 +11,7 @@
                     <li class="widget">
                         <h2 class="widgettitle">About this Wine</h2>
                         <?php 
-
+                        
                             $vigneron = get_post_meta($post->ID, 'vigneron', True);
                             $location = get_post_meta($post->ID, 'location', True);
                             $grape = get_post_meta($post->ID, 'grape', True);
@@ -89,18 +89,19 @@
                             );
                             $posts = get_posts( $args );
 
-                            echo("<ul>\n");
-                            foreach ($posts as $post) {
-                                echo("<li>\n");
-                                echo("<a href='" . get_permalink($post->ID) . "'>");
-                                echo get_the_title($post->ID);
-                                echo("</a>\n");
-                                echo("</li>\n");
-                            }
-                            echo("</ul>");
+                            // echo("<ul>\n");
+                            // foreach ($posts as $post) {
+                            //     echo("<li>\n");
+                            //     echo("<a href='" . get_permalink($post->ID) . "'>");
+                            //     echo get_the_title($post->ID);
+                            //     echo("</a>\n");
+                            //     echo("</li>\n");
+                            // }
+                            // echo("</ul>");
 
                         ?>
                     </li>-->
+                    <?php if ( wp_get_post_terms($post->ID, 'vigneron') ) : ?>
                     <li class="widget">
                         <h2 class="widgettitle">Winemaker Profile</h2>
                         <?php 
@@ -115,6 +116,7 @@
 
                         ?>
                     </li>
+                    <?php endif; ?>
                     <?php dynamic_sidebar( 'post' ); ?>
                 </ul>
             </div>
