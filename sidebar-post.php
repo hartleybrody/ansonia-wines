@@ -64,7 +64,7 @@
 
                         ?>
                     </li>
-                    <li class="widget">
+                    <!--<li class="widget">
                         <h2 class="widgettitle">Other Posts About This Vigneron</h2>
                         <?php 
                             $results = get_terms('vigneron');
@@ -96,7 +96,7 @@
                             echo("</ul>");
 
                         ?>
-                    </li>
+                    </li>-->
                     <li class="widget">
                         <h2 class="widgettitle">Winemaker Profile</h2>
                         <?php 
