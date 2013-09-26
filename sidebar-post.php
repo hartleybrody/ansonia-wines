@@ -20,38 +20,40 @@
                             $purchase_link = get_post_meta($post->ID, 'purchase_link', True);
                             $purchase_text = get_post_meta($post->ID, 'purchase_text', True);
 
+                            echo("<ul class='unstyled'>");
+
                             if($vigneron){
-                                echo '<span class="key">Vigneron:</span> <span class="value">';
+                                echo '<li><span class="key">Vigneron:</span> <span class="value">';
                                 echo $vigneron;
-                                echo '</span>';
+                                echo '</span></li>';
                             }
 
                             if($location){
-                                echo '<span class="key">Location:</span> <span class="value">';
+                                echo '<li><span class="key">Location:</span> <span class="value">';
                                 echo $location;
-                                echo '</span>';
+                                echo '</span></li>';
                             }
 
                             if($grape){
-                                echo '<span class="key">Grape:</span> <span class="value">';
-                                echo $vigneron;
-                                echo '</span>';
+                                echo '<li><span class="key">Grape:</span> <span class="value">';
+                                echo $grape;
+                                echo '</span></li>';
                             }
 
                             if($vintage){
-                                echo '<span class="key">Vintage:</span> <span class="value">';
-                                echo $vigneron;
-                                echo '</span>';
+                                echo '<li><span class="key">Vintage:</span> <span class="value">';
+                                echo $vintage;
+                                echo '</span></li>';
                             }
 
                             if($price){
-                                echo '<span class="key">price:</span> <span class="value">';
-                                echo $vigneron;
-                                echo '</span>';
+                                echo '<li><span class="key">price:</span> <span class="value">';
+                                echo $price;
+                                echo '</span></li>';
                             }
 
                             if($purchase_link){
-                                echo '<span class="key">PURCHASE:</span> <a class="value" href="';
+                                echo '<li><span class="key">PURCHASE:</span> <a class="value" href="';
                                 echo $purchase_link;
                                 echo '">';
                                 if ($purchase_text){
@@ -59,8 +61,10 @@
                                 } else{
                                     echo "click here to buy";
                                 }
-                                echo '</a>';
+                                echo '</a></li>';
                             }
+
+                            echo("</ul>");
 
                         ?>
                     </li>
