@@ -104,8 +104,8 @@
                     <li class="widget">
                         <h2 class="widgettitle">Winemaker Profile</h2>
                         <?php 
-                            $results = get_terms('vigneron');
-                            //print_r($results);
+                            $results = wp_get_post_terms($post->ID, 'vigneron');
+                            // print_r($results);
                            
                             $first_key = key($results);
                             $slug = $results[$first_key]->slug;
