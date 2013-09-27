@@ -122,6 +122,7 @@ add_action( 'wp_enqueue_scripts', '_s_scripts' );
 if ( function_exists('register_sidebar') ) {
 	register_sidebars(1, array('name'=>'Homepage'));
 	register_sidebars(1, array('name'=>'Post'));
+	register_sidebars(1, array('name'=>'Page'));
 }
 
 // Custom Taxonomy Code  
