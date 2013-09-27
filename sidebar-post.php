@@ -8,8 +8,6 @@
 ?>
             <div id="sidebar">
                 <ul>
-                    <li class="widget">
-                        <h2 class="widgettitle">About this Wine</h2>
                         <?php 
                         
                             $vigneron = get_post_meta($post->ID, 'vigneron', True);
@@ -19,6 +17,12 @@
                             $price = get_post_meta($post->ID, 'price', True);
                             $purchase_link = get_post_meta($post->ID, 'purchase_link', True);
                             $purchase_text = get_post_meta($post->ID, 'purchase_text', True);
+
+                            $wine_info = $vigneron || $location || $grape || $vintage || $price || $purchase_link;
+
+                            if($wine_info){
+                                echo '<li class="widget"> <h2 class="widgettitle">About this Wine</h2>';
+                            }
 
                             echo("<ul class='unstyled'>");
 
@@ -66,8 +70,11 @@
 
                             echo("</ul>");
 
+                            if($wine_info){
+                                echo '</li>';
+                            }
+
                         ?>
-                    </li>
                     <!--<li class="widget">
                         <h2 class="widgettitle">Other Posts About This Vigneron</h2>
                         <?php 
