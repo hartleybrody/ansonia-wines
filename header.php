@@ -55,6 +55,16 @@
                             'category' => 3, 
                             );
                         $bookmarks = get_bookmarks($bookmarks_args);
+
+                        // sort the order of the links by their rating
+                        function sort_by_rating($a, $b){
+                            if ($a->link_rating == $b->link_rating) {
+                                return 0;
+                            }
+                            return ($a->link_rating < $b->link_rating) ? -1 : 1;
+                        }
+                        usort($bookmarks, "sort_by_rating");
+                        
                         foreach ($bookmarks as $bookmark) {
                             $bookmark_repr = '<li class="link"><a href="' . $bookmark->link_url . '">' . $bookmark->link_name . '</a></li>';
                             echo($bookmark_repr);
@@ -68,7 +78,7 @@
                     <span>(202) 506-4215</span><br>
                     <a href="mailto:tom@ansoniawines.com">tom@ansoniawines.com<br>
                     <a href="https://www.twitter.com/ansoniawines">@ansoniawines</a><br>
-                    <a href="???" class="subscribe-link">Sign up for our posts</a>
+                    <a href="/follow/" class="subscribe-link">Sign up for our posts</a>
                 </p>
             </div><!--.span4-->
         </div><!-- #navigation.row -->

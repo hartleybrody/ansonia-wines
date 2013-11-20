@@ -97,13 +97,15 @@ a:hover{
 #index-pagination {
     border-top: 1px solid #888;
     margin-top: 10px;
-    padding-top: 10px
+    padding-top: 10px;
+    font-family: "Georgia", serif;
 }
 
 .page-title{
     text-transform: uppercase;
     font-family: 'Georgia', serif;
-    font-size: 1.8em;
+    font-size: 1.4em;
+    line-height: 0.8em;
 }
 
 .post{
@@ -114,6 +116,7 @@ a:hover{
     color: #993333;
     font-family: 'Georgia', serif;
     font-weight: 100;
+    line-height: 0.9em;
 }
 
 .post-date{
@@ -143,7 +146,6 @@ a:hover{
 }
 
 .post-custom-field{
-    text-transform: uppercase;
     font-family: 'Georgia', serif;
     font-weight: 700;
 }
@@ -205,9 +207,8 @@ a.post-custom-field-value:hover{
     color: #aaa;
 }
 
-p{ /*
+#post-content article{
     font-family: "Georgia", serif;
-    line-height: 1.8em; */
 }
 
 #related-posts{
@@ -217,6 +218,14 @@ p{ /*
     padding: 5px 0;
 }
 #related-posts .span3:first-child{ margin-left:0; }
+
+/****************************************************
+    page.php
+****************************************************/
+
+#page-content article{
+    font-family: 'Georgia', serif;
+}
 
 /****************************************************
     sidebar.php

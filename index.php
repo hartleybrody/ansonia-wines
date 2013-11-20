@@ -17,7 +17,7 @@ get_header(); ?>
             <div class="row">
                 <div class="col-lg-8" id="main-content">
                     <?php if ( have_posts() ) : ?>
-                        <h2 class="page-title">Recent Posts</h2>
+                        <h4 class="page-title">Recent Posts</h4>
                         <?php $post_num = 1; ?>
                         <?php while ( have_posts() ) : the_post(); ?>
                             <a href="<?php the_permalink() ?>">
@@ -34,7 +34,7 @@ get_header(); ?>
                                         />
                                     </a>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="span6">
                                     <span class="post-date">
                                         <?php echo get_the_date('l F j, Y'); ?>
                                     </span>
@@ -65,6 +65,8 @@ get_header(); ?>
                                     </div>
                                 </div>
                             </div> <!--.row.post-->
+
+                            <hr />
 
                         <?php endwhile; ?>
                         <div id="index-pagination">

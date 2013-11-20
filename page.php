@@ -15,21 +15,16 @@ get_header(); ?>
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-    
-        <div class="row clearfix">
-            <div class="span12" id="logo-banner">
-                <a href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/logo.jpg" />
-                </a>
-            </div>
-        </div>
         
         <div class="row">
-            <div class="span6 offset3">
-                <h1 class="title"><?php the_title(); ?></h1>
+            <div class="span6 offset1" id="page-content">
+                <h1 class="page-title"><?php the_title(); ?></h1>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <?php the_content(); ?>
                 </article>
+            </div>
+            <div class="span4">
+                <?php get_sidebar('page'); ?>
             </div>
         </div>
 
