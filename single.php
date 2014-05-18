@@ -14,7 +14,7 @@ get_header(); ?>
         <div class="row">
             <div class="span6 offset1" id="post-content">
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" class="img-responsive"/>
+                    <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" />
                     <h1 class="post-title"><?php the_title(); ?></h1>
                     <div id="byline">
                         <?php the_time('l, F j, Y') ?>
@@ -22,7 +22,7 @@ get_header(); ?>
                     <?php the_content(); ?>
                 </article>
             </div>
-            <div class="col-lg-4">
+            <div class="span4">
                 <?php get_sidebar('post'); ?>
             </div>
         </div>

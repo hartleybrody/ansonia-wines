@@ -15,7 +15,7 @@
 get_header(); ?>
 
             <div class="row">
-                <div class="col-lg-8" id="main-content">
+                <div class="span8" id="main-content">
                     <?php if ( have_posts() ) : ?>
                         <h4 class="page-title">Recent Posts</h4>
                         <?php $post_num = 1; ?>
@@ -23,12 +23,12 @@ get_header(); ?>
                             <a href="<?php the_permalink() ?>">
                                 <h3 class="post-title"><?php the_title(); ?></h3>
                             </a>
-                            <div class="row post clearfix">
-                                <div class="col-lg-4">
+                            <div class="row post">
+                                <div class="span2">
                                     <a href="<?php the_permalink() ?>" >
                                         <img 
                                             src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" 
-                                            class="tile-post-img img-responsive 
+                                            class="tile-post-img 
                                                 <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>"
                                             <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "data-alt-src='" . get_post_meta( $post->ID, 'tile_banner_hover', True ) . "'"; }?> 
                                         />
@@ -82,7 +82,7 @@ get_header(); ?>
 
                     <?php endif; ?>
                 </div><!--.span8#main-content-->
-                <div class="col-lg-4">
+                <div class="span4">
                     <?php get_sidebar('homepage'); ?>
                 </div><!--.span8#main-content-->
             </div>

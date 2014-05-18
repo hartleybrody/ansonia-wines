@@ -44,7 +44,7 @@ a:hover{
     float: left;
     font-size: 1.2em;
 }
-#navigation  .link:first-child{margin-left: -45px}
+#navigation  .link:first-child{padding-left: 0}
 
 #navigation  .link a{
     color: #888;
@@ -109,7 +109,7 @@ a:hover{
 }
 
 .post{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .post-title{
@@ -292,7 +292,7 @@ h2.widgettitle:first-child{
 }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 979px) {
     #header{
         text-align: center;
     }
