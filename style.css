@@ -69,7 +69,6 @@ a:hover{
 #footer{
     margin-top: 10px;
     padding: 10px 0;
-    border-top: 1px solid #888;
     text-align: center;
 }
 
@@ -84,7 +83,6 @@ a:hover{
     index.php
 ****************************************************/
 #index-pagination {
-    border-top: 1px solid #888;
     margin-top: 10px;
     padding-top: 10px;
     font-family: "Georgia", serif;
@@ -93,58 +91,42 @@ a:hover{
 .page-title{
     text-transform: uppercase;
     font-family: 'Georgia', serif;
-    font-size: 1.4em;
+    font-size: 1.6em;
     line-height: 0.8em;
+    font-weight: 100;
+    text-align: center;
+    margin: 30px 0;
 }
 
 .post{
     margin-bottom: 20px;
 }
 
-.post-title{
+.post-banner{
+    width: 100%;
+}
+
+.post-title a{
     color: #993333;
     font-family: 'Georgia', serif;
+}
+.post-title h3{
     font-weight: 100;
-    line-height: 0.9em;
+    font-size: 2.2em;
 }
 
 .post-date{
-    color: #aaa;
+    color: #333;
     font-family: 'Georgia', serif;
     font-weight: 100;
-    font-size: 0.9em;
+    font-size: 1.1em;
 
     display: block;
-    margin-top: -2px;
+    margin-top: 5px;
 }
 
-.post-preview{
+.post-excerpt p{
     font-family: 'Georgia', serif;
-}
-
-.post-read-more{
-    text-align: right;
-    margin-bottom: 10px;
-}
-
-.post-read-more a{
-    color: #006699;
-    font-family: 'Georgia', serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.post-custom-field{
-    font-family: 'Georgia', serif;
-    font-weight: 700;
-}
-
-.post-custom-field-value{
-    color: #333;
-}
-
-a.post-custom-field-value:hover{
-    color: #888;
 }
 
 

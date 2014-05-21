@@ -15,55 +15,46 @@
 get_header(); ?>
 
             <div class="row">
-                <div class="span8" id="main-content">
+                <div class="span8 offset2" id="main-content">
                     <?php if ( have_posts() ) : ?>
+                        <hr />
                         <h4 class="page-title">Recent Posts</h4>
-                        <?php $post_num = 1; ?>
                         <?php while ( have_posts() ) : the_post(); ?>
-                            <a href="<?php the_permalink() ?>">
-                                <h3 class="post-title"><?php the_title(); ?></h3>
-                            </a>
+                            
                             <div class="row post">
-                                <div class="span2">
-                                    <a href="<?php the_permalink() ?>" >
-                                        <img 
-                                            src="<?php echo get_post_meta( $post->ID, 'tile_banner', True ); ?>" 
-                                            class="tile-post-img 
-                                                <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>"
-                                            <?php if( get_post_meta( $post->ID, 'tile_banner_hover', True ) ){ echo "data-alt-src='" . get_post_meta( $post->ID, 'tile_banner_hover', True ) . "'"; }?> 
-                                        />
-                                    </a>
-                                </div>
-                                <div class="span6">
-                                    <span class="post-date">
-                                        <?php echo get_the_date('l F j, Y'); ?>
-                                    </span>
-                                    <p class="post-preview">
-                                        <?php echo get_the_excerpt(); ?>
-                                    </p>
-                                    <div class="post-read-more">
-                                        <a href="<?php the_permalink() ?>">read more ></a>
-                                    </div>
-                                    <div class="post-custom-field">
-                                        <?php 
-                                            $purchase_link = get_post_meta( $post->ID, 'purchase_link', True );
-                                            if($purchase_link){
-                                                echo '<a href="' . $purchase_link . '"';
-                                            } else{
-                                                echo '<span';
-                                            }
-                                        ?> class="post-custom-field-value">
-                                            <?php echo get_post_meta( $post->ID, 'name_of_wine', True ); ?>
-                                        <?php 
-                                            $purchase_link = get_post_meta( $post->ID, 'purchase_link', True );
-                                            if($purchase_link){
-                                                echo '</a>';
-                                            } else{
-                                                echo '</span>';
-                                            }
-                                        ?>
-                                    </div>
-                                </div>
+                                <div class="span8">
+
+                                    <div class="row post-banner">
+                                        <a href="<?php the_permalink() ?>" >
+                                            <img 
+                                                src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" 
+                                                class="tile-post-img 
+                                                    <?php if( get_post_meta( $post->ID, 'full_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>"
+                                                <?php if( get_post_meta( $post->ID, 'full_banner_hover', True ) ){ echo "data-alt-src='" . get_post_meta( $post->ID, 'full_banner_hover', True ) . "'"; }?>
+                                                style="width:1000px" 
+                                            />
+                                        </a>
+                                    </div> <!--.row.post-banner-->
+
+                                    <div class="row post-date">
+                                        <span class="post-date">
+                                            <?php echo get_the_date('l F j, Y'); ?>
+                                        </span>
+                                    </div> <!--.row.post-date-->
+
+                                    <div class="row post-title">
+                                        <a href="<?php the_permalink() ?>">
+                                            <h3><?php the_title(); ?></h3>
+                                        </a>
+                                    </div> <!--.row.post-title-->
+
+                                    <div class="row post-excerpt">
+                                        <p>
+                                            <?php echo get_the_excerpt(); ?>
+                                        </p>
+                                    </div> <!--.row.post-excerpt-->
+                                    
+                                </div> <!--.span8-->
                             </div> <!--.row.post-->
 
                             <hr />
@@ -81,9 +72,6 @@ get_header(); ?>
                         <h5>Sorry!</h5>
 
                     <?php endif; ?>
-                </div><!--.span8#main-content-->
-                <div class="span4">
-                    <?php get_sidebar('homepage'); ?>
                 </div><!--.span8#main-content-->
             </div>
 
