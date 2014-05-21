@@ -94,4 +94,10 @@
 
         <hr />
 
+        <div class="row" id="main-slideshow">
+            <div class="span12">
+                <img src="http://placehold.it/940x200" />
+            </div>
+        </div>
+
         <div id="content">
