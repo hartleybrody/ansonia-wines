@@ -29,13 +29,13 @@ a:hover{
     font-weight: 100;
 }
 
-#navigation {
+#header {
     margin-bottom: 10px
 }
-#navigation  #links{
+#header  #links{
     margin: 0;
 }
-#navigation  .link{
+#header  .link{
     list-style-type: none;
     padding: 5px 10px;
     text-transform: uppercase;
@@ -44,38 +44,27 @@ a:hover{
     float: left;
     font-size: 1.2em;
 }
-#navigation  .link:first-child{padding-left: 0}
+#header  .link:first-child{padding-left: 0}
 
-#navigation  .link a{
-    color: #888;
-    font-weight: 700;
-}
-#navigation  .link a:hover{ 
+#header  .link a{
     color: #333;
+    font-weight: 100;
+    font-size: 0.85em;
+}
+#header  .link a:hover{ 
+    color: #888;
     text-decoration: none;
 }
-#navigation .contact-info {
-    text-align: right;
-}
-#navigation .contact-info span, #navigation .contact-info a {
-    font-family: 'Georgia', serif;
-    color: #999;
-    font-weight: 100;
-    font-size: 1.0em;
-}
-#navigation .contact-info .subscribe-link{
-    font-style:normal;
+#header #call-to-action {
+    color: #333;
     text-transform: uppercase;
     font-family: 'Georgia', serif;
     font-weight: 100;
-    color: #990000;
-
+    font-size: 1.4em;
     display: inline-block;
-    margin-top: 5px;
+    margin-right: 15px;
 }
-#navigation .contact-info .subscribe-link:hover{
-    text-decoration: underline;
-}
+
 
 #footer{
     margin-top: 10px;

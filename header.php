@@ -45,9 +45,11 @@
 <body <?php body_class(); ?>>
 
     <div class="container">
-        <div id="navigation" class="row clearfix">
-            <div class="span8" id="header">
+        <div id="header" class="row clearfix">
+            <div class="span6">
                 <h1 id="site-title"><?php bloginfo( 'name' ); ?></h1>
+            </div>
+            <div class="span6">
                 <ul id="links">
                     <!-- navigation links -->
                     <?php 
@@ -70,21 +72,25 @@
                             $bookmark_repr = '<li class="link"><a href="' . $bookmark->link_url . '">' . $bookmark->link_name . '</a></li>';
                             echo($bookmark_repr);
                         }
-                        //wp_list_bookmarks(3, '<li class="nav-link link">', '</li>', '', TRUE, 'rating', TRUE); 
                     ?>
-                    <!-- social links -->
-                    <!--<?php //get_links(4, '<li class="social-link link hidden-phone">', '</li>', '', TRUE, 'url', TRUE); ?>-->
                 </ul>
-            </div><!--.span8-->
-            <div class="span4">
-                <p class="contact-info visible-desktop">
-                    <span>(202) 506-4215</span><br>
-                    <a href="mailto:tom@ansoniawines.com">tom@ansoniawines.com<br>
-                    <a href="https://www.twitter.com/ansoniawines">@ansoniawines</a><br>
-                    <a href="/follow/" class="subscribe-link">Sign up for our posts</a>
-                </p>
-            </div><!--.span4-->
-        </div><!-- #navigation.row -->
+
+                <br>
+                <span id="call-to-action">
+                    Join our email list:
+                </span>
+                <!-- constant contact form -->
+                <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="display: inline;">
+                    <input type="text" name="ea" value="" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #CCCCCC; width:150px" class="input-large input" placeholder="Email Address...">
+                    <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -7px;">
+                    <input type="hidden" name="m" value="1102867877524">
+                    <input type="hidden" name="p" value="oi">
+                </form>
+                <!-- end constant contact form -->
+
+
+            </div>
+        </div><!-- #header.row -->
 
         <hr />
 
