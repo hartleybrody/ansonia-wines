@@ -12,6 +12,10 @@
         $('.carousel').carousel({
             interval: 3500
         });
+
+        $('.modal').modal({
+            show: true
+        });
     </script>
     
     <!-- google analytics -->
