@@ -94,7 +94,8 @@
 
         <hr />
 
-        <div class="row" id="main-slideshow">
+        <!-- top slideshow, only shown on homepage -->
+        <div class="row" id="main-slideshow" <?php if (!is_home()){ echo('style="display:none"');} ?>>
             <div class="span12">
                 <img src="http://placehold.it/940x200" />
             </div>
