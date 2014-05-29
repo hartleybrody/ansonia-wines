@@ -97,7 +97,23 @@
         <!-- top slideshow, only shown on homepage -->
         <div class="row" id="main-slideshow" <?php if (!is_home()){ echo('style="display:none"');} ?>>
             <div class="span12">
-                <img src="http://placehold.it/940x200" />
+                <div id="myCarousel" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <img src="http://placehold.it/940x200" />
+                        </div>
+                        <div class="item">
+                            <img src="http://placehold.it/940x200" />
+                        </div>
+                        <div class="item">
+                            <img src="http://placehold.it/940x200" />
+                        </div>
+                    </div>
+                    <!-- Carousel nav -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                </div>
             </div>
         </div>
 

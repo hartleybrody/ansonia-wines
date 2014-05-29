@@ -7,6 +7,10 @@
     </div><!-- .container -->
   
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/_s/bootstrap/js/bootstrap.js"></script>
+    <script>
+        $('.carousel').carousel()
+    </script>
     
     <!-- google analytics -->
     <script type="text/javascript">
