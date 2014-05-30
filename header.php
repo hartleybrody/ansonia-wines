@@ -104,7 +104,7 @@
                     <div class="carousel-inner">
                         <div class="active item">
                             <a href="http://www.ansoniawines.com/about">
-                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/about_slide.jpg" />
+                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/about_slide2.jpg" />
                             </a>
                         </div>
                         <div class="item">
@@ -146,13 +146,13 @@
                 <div class="span6">
                     <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/pop-up-tiles.jpg" style="height:500px;"/>
                 </div>
-                <div class="span6" style="padding-top: 80px;">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top: -70px; margin-right: -40px;">&times;</button>
+                <div class="span6" style="padding-top: 80px; padding-left: 30px">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top: -70px; margin-right: -10px;">&times;</button>
                     <h1 id="site-title">
                         Ansonia Wines
                     </h1>
                     <h2 id="site-byline">
-                        Ansonia Byline Goes Here
+                        Artisan French wines from winemakers we know.
                     </h2>
 
                     <hr />
@@ -172,7 +172,7 @@
                     <hr />
 
                     <p>
-                        Lorem ipsum dolor sit amet, pri vidit nominati delicatissimi ea, pro mucius omnium dissentiet ei. Affert nostro corpora pro ex, quodsi signiferumque vel cu. In suas summo dictas eam, quo ad invenire tractatos mediocritatem. Mei ei elit eius reprimique, vis autem euismod ex.
+                        Each week we write a series of posts about our wines, sharing tasting notes, maps, stories, and recipe pairings. Sign up to receive these posts by email, and follow us across France as we bring you interesting wines that reflect the place from which they come.
                     </p>
                 </div>
             </div>
