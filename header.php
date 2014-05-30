@@ -47,7 +47,9 @@
     <div class="container">
         <div id="header" class="row clearfix">
             <div class="span6">
-                <h1 id="site-title"><?php bloginfo( 'name' ); ?></h1>
+                <a href="<?php echo get_site_url(); ?>">
+                    <h1 id="site-title"><?php bloginfo( 'name' ); ?></h1>
+                </a>
             </div>
             <div class="span6">
                 <ul id="links">
