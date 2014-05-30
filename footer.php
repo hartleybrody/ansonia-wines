@@ -15,23 +15,24 @@
         });
 
         var hasSeenModal = $.cookie("hasSeenModal");
-        console.log(hasSeenModal);
         if (hasSeenModal === undefined){
-
-            // show and center the modal
-            $('.modal').modal({
-                show: true
-            }).css({
-                'margin-top': function () { //vertical centering
-                    return -($(this).height() / 2);
-                },
-                'margin-left': function () { //Horizontal centering
-                    return -($(this).width() / 2);
-                }
-            });
 
             // set the cookie to expire in one day from now
             $.cookie("hasSeenModal", true, { expires: 1 });
+
+            if ($(window).width() > 940 && $(window).height() > 500){ // only show the modal if they're on a big enough screen
+                // show and center the modal
+                $('.modal').modal({
+                    show: true
+                }).css({
+                    'margin-top': function () { //vertical centering
+                        return -($(this).height() / 2);
+                    },
+                    'margin-left': function () { //Horizontal centering
+                        return -($(this).width() / 2);
+                    }
+                });
+            }
         }
 
         
