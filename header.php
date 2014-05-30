@@ -101,15 +101,35 @@
                     <!-- Carousel items -->
                     <div class="carousel-inner">
                         <div class="active item">
-                            <img src="http://placehold.it/940x200" />
+                            <a href="http://www.ansoniawines.com/about">
+                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/about_slide.jpg" />
+                            </a>
                         </div>
                         <div class="item">
-                            <img src="http://placehold.it/940x200" />
+                            <a href="http://www.ansoniawines.com/2014/05/delightful-exuberant-pinot-noir/">
+                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/pn13_slide.jpg" />
+                            </a>
                         </div>
                         <div class="item">
-                            <img src="http://placehold.it/940x200" />
+                            <a href="http://www.ansoniawines.com/newton">
+                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/panorama_slide.jpg" />
+                            </a>
                         </div>
+                        <div class="item">
+                            <a href="http://www.ansoniawines.com/regional-samplers/">
+                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/samplers_slide.jpg" />
+                            </a>
+                        </div>
+
+                        <!-- SAMPLE SLIDESHOW ITEM TO COPY
+                        <div class="item">
+                            <a href="{{link_goes_here}}">
+                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/{{file_name_goes_here}}.jpg" />
+                            </a>
+                        </div>
+                        END SAMPLE ITEM -->
                     </div>
+
                     <!-- Carousel nav -->
                     <!--
                         <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
