@@ -8,21 +8,33 @@
   
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/_s/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/_s/scripts/jquery.cookie.js"></script>
     <script>
         $('.carousel').carousel({
             interval: 3500
         });
 
-        $('.modal').modal({
-            show: true
-        }).css({
-            'margin-top': function () { //vertical centering
-                return -($(this).height() / 2);
-            },
-            'margin-left': function () { //Horizontal centering
-                return -($(this).width() / 2);
-            }
-        });
+        var hasSeenModal = $.cookie("hasSeenModal");
+        console.log(hasSeenModal);
+        if (hasSeenModal === undefined){
+
+            // show and center the modal
+            $('.modal').modal({
+                show: true
+            }).css({
+                'margin-top': function () { //vertical centering
+                    return -($(this).height() / 2);
+                },
+                'margin-left': function () { //Horizontal centering
+                    return -($(this).width() / 2);
+                }
+            });
+
+            // set the cookie to expire in one day from now
+            $.cookie("hasSeenModal", true, { expires: 1 });
+        }
+
+        
     </script>
     
     <!-- google analytics -->
