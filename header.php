@@ -119,13 +119,38 @@
             </div>
         </div>
 
-        <div class="modal fade" style="margin-top: 0px; top: 50%; height:500px; width:1000px">
+        <div class="modal fade" style="height:500px; width:1000px;">
             <div class="row">
                 <div class="span6">
-                    lorem ipsum
+                    <img src="http://placehold.it/500x500" style="height:500px;"/>
                 </div>
-                <div class="span6">
-                    lorem ipsum
+                <div class="span6" style="padding-top: 80px;">
+                    <h1 id="site-title">
+                        Ansonia Wines
+                    </h1>
+                    <h2 id="site-byline">
+                        Ansonia Byline Goes Here
+                    </h2>
+
+                    <hr />
+
+                    <span id="call-to-action">
+                        Join our email list:
+                    </span><br>
+                    <!-- constant contact form -->
+                    <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="display: inline;">
+                        <input type="text" name="ea" value="" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #CCCCCC; width:150px" class="input-large input" placeholder="Email Address...">
+                        <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -7px;">
+                        <input type="hidden" name="m" value="1102867877524">
+                        <input type="hidden" name="p" value="oi">
+                    </form>
+                    <!-- end constant contact form -->
+
+                    <hr />
+
+                    <p>
+                        Lorem ipsum dolor sit amet, pri vidit nominati delicatissimi ea, pro mucius omnium dissentiet ei. Affert nostro corpora pro ex, quodsi signiferumque vel cu. In suas summo dictas eam, quo ad invenire tractatos mediocritatem. Mei ei elit eius reprimique, vis autem euismod ex.
+                    </p>
                 </div>
             </div>
         </div>
