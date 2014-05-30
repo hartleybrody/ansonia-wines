@@ -144,10 +144,10 @@
         <div class="modal fade" style="height:500px; width:1000px;">
             <div class="row">
                 <div class="span6">
-                    <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/pop-up-tiles.jpg" style="height:500px;"/>
+                    <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/pop-up-tiles.jpg" style="height:500px; max-width:500px;"/>
                 </div>
-                <div class="span6" style="padding-top: 80px; padding-left: 30px">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top: -70px; margin-right: -10px;">&times;</button>
+                <div class="span6" style="padding-top: 80px; padding-left: 50px">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top: -70px; margin-right: 10px;">&times;</button>
                     <h1 id="site-title">
                         Ansonia Wines
                     </h1>
