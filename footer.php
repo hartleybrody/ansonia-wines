@@ -9,34 +9,35 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/_s/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="<?php echo get_site_url(); ?>/wp-content/themes/_s/scripts/jquery.cookie.js"></script>
-    <script>
-        $('.carousel').carousel({
-            interval: 3500
-        });
 
-        var hasSeenModal = $.cookie("hasSeenModal");
-        if (hasSeenModal === undefined){
+    <?php if ( is_home() ) : ?>
+        <script>
+            $('.carousel').carousel({
+                interval: 3500
+            });
 
-            // set the cookie to expire in one day from now
-            $.cookie("hasSeenModal", true, { expires: 1 });
+            var hasSeenModal = $.cookie("hasSeenModal");
+            if (hasSeenModal === undefined){
 
-            if ($(window).width() > 940 && $(window).height() > 500){ // only show the modal if they're on a big enough screen
-                // show and center the modal
-                $('.modal').modal({
-                    show: true
-                }).css({
-                    'margin-top': function () { //vertical centering
-                        return -($(this).height() / 2);
-                    },
-                    'margin-left': function () { //Horizontal centering
-                        return -($(this).width() / 2);
-                    }
-                });
+                // set the cookie to expire in one day from now
+                $.cookie("hasSeenModal", true, { expires: 1 });
+
+                if ($(window).width() > 940 && $(window).height() > 500){ // only show the modal if they're on a big enough screen
+                    // show and center the modal
+                    $('.modal').modal({
+                        show: true
+                    }).css({
+                        'margin-top': function () { //vertical centering
+                            return -($(this).height() / 2);
+                        },
+                        'margin-left': function () { //Horizontal centering
+                            return -($(this).width() / 2);
+                        }
+                    });
+                }
             }
-        }
-
-        
-    </script>
+        </script>
+    <?php endif; ?>
     
     <!-- google analytics -->
     <script type="text/javascript">
