@@ -141,7 +141,7 @@
             </div>
         </div>
 
-        <div class="modal fade" style="height:500px; width:1000px;">
+        <div class="modal fade hide" style="height:500px; width:1000px;" >
             <div class="row">
                 <div class="span6">
                     <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/pop-up-tiles.jpg" style="height:500px; max-width:500px;"/>
