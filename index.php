@@ -17,14 +17,20 @@ get_header(); ?>
             <div class="row">
                 <div class="span8 offset2" id="main-content">
                     <?php if ( have_posts() ) : ?>
-                        <hr />
-                        <h4 class="page-title">Recent Posts</h4>
+
+                        <div class="row">
+                            <div class="span8">
+                                <hr />
+                                <h4 class="page-title">Recent Posts</h4>
+                            </div>
+                        </div>
+
                         <?php while ( have_posts() ) : the_post(); ?>
                             
                             <div class="row post">
                                 <div class="span8">
 
-                                    <div class="row post-banner">
+                                    <div class="post-banner">
                                         <a href="<?php the_permalink() ?>" >
                                             <img 
                                                 src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" 
