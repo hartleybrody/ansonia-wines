@@ -136,6 +136,12 @@ a:hover{
 
 .post-excerpt p{
     font-family: 'Georgia', serif;
+    font-size: 1.1em;
+}
+
+.post-more a{
+    font-family: 'Georgia', serif;
+    font-size: 1.3em;
 }
 
 

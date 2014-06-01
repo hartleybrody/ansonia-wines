@@ -59,6 +59,12 @@ get_header(); ?>
                                             <?php echo get_the_excerpt(); ?>
                                         </p>
                                     </div> <!--.row.post-excerpt-->
+
+                                    <div class="row post-more">
+                                        <a href="<?php the_permalink() ?>">
+                                            Read More &rarr;
+                                        </a>
+                                    </div> <!--.row.post-excerpt-->
                                     
                                 </div> <!--.span8-->
                             </div> <!--.row.post-->
