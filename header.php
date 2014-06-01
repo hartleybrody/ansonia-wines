@@ -84,7 +84,7 @@
                 <!-- constant contact form -->
                 <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="display: inline;">
                     <input type="text" name="ea" value="" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #CCCCCC; width:150px" class="input-large input" placeholder="Email Address...">
-                    <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -7px;">
+                    <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -4px; height:30px">
                     <input type="hidden" name="m" value="1102867877524">
                     <input type="hidden" name="p" value="oi">
                 </form>
@@ -161,7 +161,7 @@
                     <!-- constant contact form -->
                     <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="display: inline;">
                         <input type="text" name="ea" value="" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #CCCCCC; width:150px" class="input-large input" placeholder="Email Address...">
-                        <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -7px;">
+                        <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -4px; height:30px">
                         <input type="hidden" name="m" value="1102867877524">
                         <input type="hidden" name="p" value="oi">
                     </form>
