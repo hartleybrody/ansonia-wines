@@ -150,7 +150,7 @@
                         Ansonia Wines
                     </h1>
                     <h2 id="site-byline">
-                        Artisan French wines from winemakers we know.
+                        Artisan French wines<br>from winemakers we know.
                     </h2>
 
                     <hr />
