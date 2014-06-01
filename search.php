@@ -7,15 +7,6 @@
  */
 
 get_header(); ?>
-
-    
-        <div class="row clearfix">
-            <div class="span12" id="logo-banner">
-                <a href="<?php echo home_url(); ?>">
-                    <img src="/wp-content/themes/_s/img/logo.jpg" />
-                </a>
-            </div>
-        </div>
         
         <div class="row clearfix">
             <div class="span4">
