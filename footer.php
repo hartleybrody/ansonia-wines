@@ -20,7 +20,7 @@
             if (hasSeenModal === undefined){
 
                 // set the cookie to expire in one day from now
-                $.cookie("hasSeenModal", true, { expires: 1 });
+                $.cookie("hasSeenModal", true, { expires: 3 });
 
                 if ($(window).width() > 940 && $(window).height() > 500){ // only show the modal if they're on a big enough screen
                     // show and center the modal
