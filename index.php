@@ -40,31 +40,31 @@ get_header(); ?>
                                                 style="width:1000px" 
                                             />
                                         </a>
-                                    </div> <!--.row.post-banner-->
+                                    </div> <!--.post-banner-->
 
-                                    <div class="row post-date">
+                                    <div class="post-date">
                                         <span class="post-date">
                                             <?php echo get_the_date('l F j, Y'); ?>
                                         </span>
-                                    </div> <!--.row.post-date-->
+                                    </div> <!--.post-date-->
 
-                                    <div class="row post-title">
+                                    <div class="post-title">
                                         <a href="<?php the_permalink() ?>">
                                             <h3><?php the_title(); ?></h3>
                                         </a>
-                                    </div> <!--.row.post-title-->
+                                    </div> <!--.post-title-->
 
-                                    <div class="row post-excerpt">
+                                    <div class="post-excerpt">
                                         <p>
                                             <?php echo get_the_excerpt(); ?>
                                         </p>
-                                    </div> <!--.row.post-excerpt-->
+                                    </div> <!--.post-excerpt-->
 
-                                    <div class="row post-more">
+                                    <div class="post-more">
                                         <a href="<?php the_permalink() ?>">
                                             Read More &rarr;
                                         </a>
-                                    </div> <!--.row.post-excerpt-->
+                                    </div> <!--.post-excerpt-->
                                     
                                 </div> <!--.span8-->
                             </div> <!--.row.post-->
