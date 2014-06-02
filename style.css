@@ -140,7 +140,9 @@ a:hover{
 
 .post-more a{
     font-family: 'Georgia', serif;
+    font-weight: 100;
     font-size: 1.3em;
+    color: #006699;
 }
 
 
