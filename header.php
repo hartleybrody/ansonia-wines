@@ -169,7 +169,7 @@
 
                     <hr />
 
-                    <p>
+                    <p style="width:95%">
                         Each week we write a series of posts about our wines, sharing tasting notes, maps, stories, and recipe pairings. Sign up to receive these posts by email, and follow us across France as we bring you interesting wines that reflect the place from which they come.
                     </p>
                 </div>
