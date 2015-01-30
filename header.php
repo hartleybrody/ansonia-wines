@@ -139,41 +139,36 @@
             </div>
         </div>
 
-        <div class="modal fade hide" style="height:500px; width:1000px;" >
-            <div class="row">
-                <div class="span6">
-                    <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/pop-up-tiles.jpg" style="height:500px; max-width:500px;"/>
+        <div class="modal fade hide" style="height:325px; width:930px;" >
+            <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/pop-up-tiles.jpg" style="height:325px; max-width:300px; float:left"/>
+
+            <div style="padding-top: 20px; padding-left: 350px">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top: -15px; margin-right: 10px;">&times;</button>
+                <h1 id="site-title">
+                    Ansonia Wines
+                </h1>
+                <h2 id="site-byline">
+                    <em>Artisan French wines from winemakers we know.</em>
+                </h2>
+                <div style="color:#990000; font-family: 'Georgia', serif; font-weight: 100; font-size: 1.9em; line-height: 1.0em; margin:20px 0;">
+                    Join the Ansonia list and receive a one-time<br>25% discount offer in your welcome email.
                 </div>
-                <div class="span6" style="padding-top: 80px; padding-left: 50px">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top: -70px; margin-right: 10px;">&times;</button>
-                    <h1 id="site-title">
-                        Ansonia Wines
-                    </h1>
-                    <h2 id="site-byline">
-                        Artisan French wines<br>from winemakers we know.
-                    </h2>
+                <!-- constant contact form -->
+                <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="display: inline;">
+                    <input type="text" name="ea" value="" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #CCCCCC; width:150px" class="input-large input" placeholder="Email Address...">
+                    <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -4px; height:30px">
+                    <input type="hidden" name="m" value="1102867877524">
+                    <input type="hidden" name="p" value="oi">
+                </form>
+                <!-- end constant contact form -->
 
-                    <hr />
+                <hr />
 
-                    <span id="call-to-action">
-                        Join our email list:
-                    </span><br>
-                    <!-- constant contact form -->
-                    <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="display: inline;">
-                        <input type="text" name="ea" value="" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #CCCCCC; width:150px" class="input-large input" placeholder="Email Address...">
-                        <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -4px; height:30px">
-                        <input type="hidden" name="m" value="1102867877524">
-                        <input type="hidden" name="p" value="oi">
-                    </form>
-                    <!-- end constant contact form -->
-
-                    <hr />
-
-                    <p style="width:95%">
-                        Each week we write a series of posts about our wines, sharing tasting notes, maps, stories, and recipe pairings. Sign up to receive these posts by email, and follow us across France as we bring you interesting wines that reflect the place from which they come.
-                    </p>
-                </div>
+                <p style="font-family:'Georgia', serif;" class="muted">
+                    Unsubscribe anytime with <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/safe-unsubscribe.jpeg" style="height:20px; margin-left:10px"/>
+                </p>
             </div>
+
         </div>
 
         <div id="content">
