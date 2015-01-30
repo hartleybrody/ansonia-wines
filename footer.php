@@ -27,10 +27,10 @@
                     $('.modal').modal({
                         show: true
                     }).css({
-                        'margin-top': function () { //vertical centering
+                        'margin-top': function () { // vertical centering
                             return -($(this).height() / 2);
                         },
-                        'margin-left': function () { //Horizontal centering
+                        'margin-left': function () { // horizontal centering
                             return -($(this).width() / 2);
                         }
                     });
