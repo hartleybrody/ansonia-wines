@@ -24,16 +24,18 @@
 
                 if ($(window).width() > 940 && $(window).height() > 500){ // only show the modal if they're on a big enough screen
                     // show and center the modal
-                    $('.modal').modal({
-                        show: true
-                    }).css({
-                        'margin-top': function () { // vertical centering
-                            return -($(this).height() / 2);
-                        },
-                        'margin-left': function () { // horizontal centering
-                            return -($(this).width() / 2);
-                        }
-                    });
+                    setTimeout( function(){
+                        $('.modal').modal({
+                            show: true
+                        }).css({
+                            'margin-top': function () { // vertical centering
+                                return -($(this).height() / 2);
+                            },
+                            'margin-left': function () { // horizontal centering
+                                return -($(this).width() / 2);
+                            }
+                        });
+                    }, 4000)
                 }
             }
         </script>
