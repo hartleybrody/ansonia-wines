@@ -102,31 +102,25 @@
                 <div id="myCarousel" class="carousel slide">
                     <!-- Carousel items -->
                     <div class="carousel-inner">
-                        <div class="active item">
+                        <div class="item">
                             <a href="http://www.ansoniawines.com/about">
-                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/about_slide2.jpg" />
+                                <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/about_slide2.jpg">
                             </a>
                         </div>
                         <div class="item">
-                            <a href="http://www.ansoniawines.com/2014/05/delightful-exuberant-pinot-noir/">
-                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/pn13_slide.jpg" />
+                            <a href="http://www.ansoniawines.com/ordering/">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2014/10/ordering_banner_slide.jpg">
                             </a>
                         </div>
-                        <div class="item">
+                        <div class="item active">
                             <a href="http://www.ansoniawines.com/newton">
-                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/panorama_slide.jpg" />
+                                <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/panorama_slide.jpg">
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="http://www.ansoniawines.com/regional-samplers/">
-                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/samplers_slide.jpg" />
-                            </a>
-                        </div>
-
                         <!-- SAMPLE SLIDESHOW ITEM TO COPY
                         <div class="item">
                             <a href="{{link_goes_here}}">
-                                <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/slideshow/{{file_name_goes_here}}.jpg" />
+                                <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/{{file_name_goes_here}}.jpg" />
                             </a>
                         </div>
                         END SAMPLE ITEM -->
