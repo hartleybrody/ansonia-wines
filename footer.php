@@ -22,7 +22,8 @@
                 // set the cookie to expire in one day from now
                 $.cookie("hasSeenModal", true, { expires: 3 });
 
-                if ($(window).width() > 940 && $(window).height() > 500){ // only show the modal if they're on a big enough screen
+                if ($(window).width() > 940 && $(window).height() > 400){ // only show the modal if they're on a big enough screen
+                    console.log("got here 1");
                     // show and center the modal
                     setTimeout( function(){
                         $('.modal').modal({
@@ -35,7 +36,7 @@
                                 return -($(this).width() / 2);
                             }
                         });
-                    }, 4000)
+                    }, 4000);
                 }
             }
         </script>
