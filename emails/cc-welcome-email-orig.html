@@ -1,0 +1,289 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:cctd="http://www.constantcontact.com/cctd">
+
+<head>
+    
+<title>$Letter.Subject</title>
+</head>
+<body class="body"><CopyRight>Copyright (c) 1996-2015 Constant Contact. All rights reserved.  Except as permitted under a separate
+written agreement with Constant Contact, neither the Constant Contact software, nor any content that appears on any Constant Contact site,
+including but not limited to, web pages, newsletters, or templates may be reproduced, republished, repurposed, or distributed without the
+prior written permission of Constant Contact.  For inquiries regarding reproduction or distribution of any Constant Contact material, please
+contact legal@constantcontact.com.</CopyRight>
+<PermissionReminder line1="LETTER.PERMISSION.REMINDER.WELCOME.LINE1"/>
+<center>
+    <!-- Duplicate class="body" required to ensure proper display web mail clients -->
+
+    <!-- BEGIN: Logo Include -->
+
+    <Introduction name="letter.intro" title="Introduction">
+    <IfPropertyExists name="letter.headerlogo">
+        <table border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+            <td align="center" colspan="1" rowspan="1" valign="bottom">
+                <ImageProperty example="(e.g. http://imgcc.com/logo.gif)" href="$Account.VisitorLogoURL" name="letter.headerlogo" title="Header Image or Logo URL">
+                    <img align="center" border="0" src="http://imgcc.com/sunset-travel-logo.gif" vspace="2"/>
+                </ImageProperty>
+            </td>
+        </tr>
+        </table>
+    </IfPropertyExists>
+    </Introduction>
+    <!-- END: Logo Include -->
+
+    <Introduction name="letter.intro" title="Introduction">
+        <!-- BEGIN: Title Table -->
+
+        <table border="0" cellpadding="0" cellspacing="0" class="body" width="600">
+        <tr>
+            <td colspan="1" rowspan="1" width="1"><br/></td>
+            <td colspan="1" rowspan="1" width="20"><img border="0" height="30" src="http://imgcc.com/spacer.gif" width="20"/></td>
+            <td colspan="1" rowspan="3" valign="top" width="579"><img alt="-" border="0" height="10" src="http://imgcc.com/spacer.gif" width="579"/>
+                <IfPropertyExists name="letter.title">
+                    <font class="TitleText">
+                    <Property font="TitleText" name="letter.title" title="Title" type="single"/>
+                    </font>
+                </IfPropertyExists>
+                <!-- END: Title Text -->
+
+            </td>
+        </tr>
+        <tr>
+            <td class="Border1" colspan="1" rowspan="2" width="1"><img alt="-" border="0" height="40" src="http://imgcc.com/spacer.gif" width="1"/></td>
+            <td class="Border1" colspan="1" rowspan="1" width="20"><img alt="-" border="0" height="1" src="http://imgcc.com/spacer.gif" width="20"/></td>
+        </tr>
+        <tr>
+            <td colspan="1" rowspan="1" width="20">
+                <img alt="-" border="0" height="30" src="http://imgcc.com/spacer.gif" width="20"/>
+            </td>
+        </tr>
+        </table>
+        <!-- END: Title Table -->
+
+        <!-- BEGIN: Subtitle Table -->
+
+        <table border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+            <td class="Border1" colspan="1" rowspan="1" width="1">
+                <img alt="-" border="0" height="1" src="http://imgcc.com/spacer.gif" width="1"/>
+            </td>
+            <td colspan="1" rowspan="1" width="100%">
+                <br/>
+            </td>
+            <td align="center" class="Border1" colspan="1" height="20" nowrap="nowrap" rowspan="1">
+                <font class="SubtitleText">&nbsp;&nbsp;&nbsp;&nbsp;
+                <b><IfPropertyExists name="letter.subtitle">
+                    <Property font="SubtitleText" name="letter.subtitle" title="Subtitle" type="single"/>
+                </IfPropertyExists></b>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                </font>
+            </td>
+        </tr>
+        </table>
+        <!-- END: Subtitle Table -->
+
+    </Introduction>
+
+    <!-- BEGIN: Main Content Table -->
+
+    <table border="0" cellpadding="0" cellspacing="0" width="600">
+    <tr>
+        <td class="Border1" colspan="1" rowspan="1" width="1">
+            <img alt="-" border="0" height="300" src="http://imgcc.com/spacer.gif" width="1"/>
+        </td>
+        <td class="MainTableBG" colspan="1" rowspan="1" width="100%">
+            <table border="0" cellpadding="15" cellspacing="0" width="100%">
+            <tr>
+                <td colspan="1" rowspan="1">
+                    <font class="MainText">
+                    <!-- BEGIN: Content HERE -->
+
+                    <Introduction name="letter.intro" title="Introduction">
+                    <Greeting secondary="Valued Subscriber,"/>
+                    <br/>
+                    <!-- BEGIN: Intro Paragraph -->
+
+                    <ForEach end="15" name="letter.intro.paragraph$repeat" start="1" type="property">
+                        <p>
+                        <Property font="MainText" name="letter.intro.paragraph$repeat" title="Introductory Paragraph" type="paragraph"/>
+                        </p>
+                    </ForEach>
+                    <!-- END: Intro Paragraph -->
+
+                    </Introduction>
+
+                    <CustomBlock name="letter.body" title="Letter Body">
+                    <!-- BEGIN: Main Body Paragraph1 -->
+
+                    <IfPropertyExists name="letter.body.paragraph1" type="property">
+                        <p>
+                        <Property font="MainText" name="letter.body.paragraph1" title="Paragraph 1" type="paragraph">Welcome to $Account.OrganizationName. We are happy$LINE.SEPARATORto have you as a member of our community. Your email$LINE.SEPARATORaddress and interest preferences have been recorded in$LINE.SEPARATORour database. In the future, you will receive periodic$LINE.SEPARATORemails specific to your interests. </Property>
+                        </p>
+                    </IfPropertyExists>
+                    <!-- END: Main Body Paragraph1 -->
+
+                    <!-- BEGIN: Main Body Paragraph2 -->
+
+                    <IfPropertyExists name="letter.body.paragraph2" type="property">
+                        <p>
+                        <Property font="MainText" name="letter.body.paragraph2" title="Paragraph 2" type="paragraph">Privacy is important to us; therefore, we will not sell, rent,$LINE.SEPARATORor give your name or address to anyone. At any point, you$LINE.SEPARATORcan select the link at the bottom of every email to$LINE.SEPARATORunsubscribe, or to receive less or more information.</Property>
+                        </p>
+                    </IfPropertyExists>
+                    <!-- END: Main Body Paragraph2 -->
+
+                    <!-- BEGIN: Main Body Paragraph3+ -->
+
+                    <ForEach end="15" name="letter.body.paragraph$repeat" start="3" type="property">
+                        <p>
+                        <Property font="MainText" name="letter.body.paragraph$repeat" title="Paragraph" type="paragraph"/>
+                        </p>
+                    </ForEach>
+                    <!-- END: Main Body Paragraph3+ -->
+
+                    </CustomBlock>
+
+                    <!-- BEGIN: Closing Text  -->
+
+                    <CustomBlock name="letter.closing" title="Closing">
+                        <ForEach end="15" name="letter.closing.paragraph$repeat" start="1" type="property">
+                            <p>
+                            <Property font="MainText" name="letter.closing.paragraph$repeat" title="Closing Paragraph" type="paragraph">Thanks again for registering. If you have any questions or$LINE.SEPARATORcomments, feel free to contact us.</Property>
+                            </p>
+                        </ForEach>
+                        <p>
+                        <Property font="MainText" name="letter.closing.text" title="Closing Text" type="single">
+                        Sincerely,
+                        </Property>
+                        </p>
+                    </CustomBlock>
+                    <!-- END: Closing Text  -->
+
+
+                    <!-- BEGIN: Email Signature  -->
+
+                    <CustomBlock name="letter.signature" title="Email Signature">
+
+                    <!-- BEGIN: Signature Image  -->
+
+                    <ImageProperty href="$Account.SignatureImageURL" name="letter.signature.image" title="Signature Image"><img border="0" src="http://imgcc.com/signature_image.gif"/></ImageProperty><br/>
+                    <!-- END: Signature Image  -->
+
+
+                    <Property name="letter.signature.name" title="Name"/>
+
+                    <IfPropertyExists name="letter.signature.organization">
+                        <p/><Property name="letter.signature.organization" title="Organization Name"/>
+                    </IfPropertyExists>
+
+                    <hr align="left" class="hr" size="1" width="50%"/>
+
+                    <!-- BEGIN: Email, Phone and Site URL Links -->
+
+                    <PropertyPair name="letter.signature.email" title="Email Address">
+                        <Property name="letter.signature.email.name" type="single"/>
+                        <SimpleURLProperty href="$Account.SignatureEmail" name="letter.signature.email" track="false" type="verify">
+                            <a class="SignatureLink" href="$Account.SignatureEmail" shape="rect">$Account.SignatureEmail</a>
+                        </SimpleURLProperty>
+                    </PropertyPair><br/>
+
+                    <PropertyPair name="letter.signature.voice" title="Phone Number">
+                        <Property name="letter.signature.voice.name" type="phone"/>
+                        <Property name="letter.signature.voice" type="phone"/>
+                    </PropertyPair><br/>
+
+                    <PropertyPair name="letter.signature.url" title="Website Address">
+                        <Property name="letter.signature.url.name" type="single"/>
+                        <SimpleURLProperty href="$Account.SiteURL" name="letter.signature.url" track="false" type="plain">
+                            <a class="SignatureLink" href="$Account.SiteURL" shape="rect">$Account.SiteURL</a>
+                        </SimpleURLProperty>
+                    </PropertyPair><br/>
+                    <!-- END: Email, Phone and Site URL Links -->
+
+
+                    </CustomBlock>
+                    <!-- END: Email Signature  -->
+
+                    </font>
+                </td>
+            </tr>
+            </table>
+            <!-- END: Content Table -->
+
+
+            <img alt="-" border="0" height="1" src="http://imgcc.com/spacer.gif" width="598"/>
+        </td>
+        <td class="Border1" colspan="1" rowspan="1" width="1"><img alt="-" border="0" height="300" src="http://imgcc.com/spacer.gif" width="1"/></td>
+    </tr>
+    <tr>
+        <td class="Border1" colspan="3" rowspan="1"><img alt="-" border="0" height="1" src="http://imgcc.com/spacer.gif" width="600"/></td>
+    </tr>
+    </table>
+    <!-- END: Main Content Table -->
+
+
+    <!-- BEGIN: Optional Coupon -->
+
+    <ForEach end="10" increment="1" name="letter.coupon$couponIterator" start="1" title="a Coupon" type="group" variable="couponIterator">
+    <Coupon name="letter.coupon$couponIterator" title="Coupon">
+    <!-- BEGIN: Main Coupon Table -->
+
+    <table border="0" cellpadding="0" cellspacing="0" width="600">
+    <tr><td colspan="3" rowspan="1">&nbsp;</td></tr>
+    <tr>
+        <td background="http://imgcc.com/coupon_dash1.gif" class="CouponBorder" colspan="3" rowspan="1"><img alt="-" border="0" height="2" src="http://imgcc.com/spacer.gif" width="2"/></td>
+    </tr>
+    <tr>
+        <td background="http://imgcc.com/coupon_dash2.gif" class="CouponBorder" colspan="1" rowspan="1" width="2"><img alt="-" border="0" height="100" src="http://imgcc.com/spacer.gif" width="2"/></td>
+        <td class="CouponBG" colspan="1" rowspan="1" width="100%">
+            <!-- BEGIN: Nested Coupon Table -->
+
+            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+            <tr>
+                <td colspan="1" rowspan="1"><font class="CouponTitle"><Property font="CouponTitle" name="letter.coupon$couponIterator.title" title="Coupon Title" txt="Save 25%"/></font></td>
+                <td colspan="1" rowspan="1">
+                <font class="CouponText">
+                    <ForEach end="3" name="letter.coupon$couponIterator.text$repeat" start="1" type="property">
+                        <p>
+                        <Property font="CouponText" name="letter.coupon$couponIterator.text$repeat" title="Coupon Text" type="paragraph">            If you are using a special coupon or promo code, include it here. Or, indicate if the coupon must be printed and presented in person. Is the coupon transferable? If so, encourage recipients to share the offer with friends and family to maximize the viral effect of the coupon.
+                        </Property>
+                        </p>
+                    </ForEach>
+                    <div class="CouponLinkAlign">
+                        <URLProperty href="$Account.SiteURL" name="letter.coupon$couponIterator.link" title="Link" track="false" txt="Check it out now..." type="txt">
+                            <a class="CouponLink" href="$Account.SiteURL" shape="rect">Check it out now...</a>
+                        </URLProperty>
+                    </div>
+                </font>
+                </td>
+            </tr>
+            </table>
+            <!-- END: Nested Coupon Table -->
+
+        </td>
+        <td background="http://imgcc.com/coupon_dash2.gif" class="CouponBorder" colspan="1" rowspan="1" width="2"><img alt="-" border="0" height="100" src="http://imgcc.com/spacer.gif" width="2"/></td>
+    </tr>
+    <tr>
+        <td align="left" class="CouponBG" colspan="3" rowspan="1">
+        <div style="padding:3px;">
+            <font class="CouponExpiration">
+            <PropertyPair font="CouponExpiration" name="letter.coupon$couponIterator.expiration" title="Expiration Date">
+                <Property name="letter.coupon$couponIterator.expiration.name"/>
+                <Property name="letter.coupon$couponIterator.expiration"/>
+            </PropertyPair>
+            </font>
+        </div>
+        </td>
+    </tr>
+    <tr>
+        <td background="http://imgcc.com/coupon_dash1.gif" class="CouponBorder" colspan="3" rowspan="1"><img alt="-" border="0" height="2" src="http://imgcc.com/spacer.gif" width="2"/></td>
+    </tr>
+    </table>
+    <!-- END: Main Coupon Table -->
+
+    </Coupon>
+    </ForEach>
+    <!-- END: Optional Coupon -->
+
+
+</center>
+</body>
+</html>
