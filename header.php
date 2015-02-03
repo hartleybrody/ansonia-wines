@@ -151,8 +151,14 @@
                                     echo($bookmark_repr);
                                 }
                             ?>
+                            <li>
+                                <hr />
+                            </li>
                             <li class="link">
                                 <a href="#">Join Our Email List</a>
+                            </li>
+                            <li>
+                                <hr />
                             </li>
                             <li class="link">
                                 <div style="opacity: 0.6;">
