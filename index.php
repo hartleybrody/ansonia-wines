@@ -44,7 +44,7 @@ get_header(); ?>
 
                                     <div class="post-date">
                                         <span class="post-date">
-                                            <?php echo get_the_date('l F j, Y'); ?>
+                                            <?php echo get_the_date('l, F j, Y'); ?>
                                         </span>
                                     </div> <!--.post-date-->
 
@@ -64,7 +64,7 @@ get_header(); ?>
                                         <a href="<?php the_permalink() ?>">
                                             Read More &rarr;
                                         </a>
-                                    </div> <!--.post-excerpt-->
+                                    </div> <!--.post-more-->
                                     
                                 </div> <!--.span8-->
                             </div> <!--.row.post-->
