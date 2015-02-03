@@ -84,17 +84,17 @@
                     }
                 </style>
                 <div style="float:right; opacity: 0.6; position: relative; top: 5px;">
-                    <a href="http://instagram.com/AnsoniaWines">
+                    <a href="http://instagram.com/AnsoniaWines" target="_blank">
                         <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/instagram.png" class="social-icon" />
                     </a>
-                    <a href="https://www.facebook.com/AnsoniaWines">
+                    <a href="https://www.facebook.com/AnsoniaWines" target="_blank">
                         <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/facebook.png" class="social-icon" />
                     </a>
                     <br>
-                    <a href="https://twitter.com/ansoniawines">
+                    <a href="https://twitter.com/ansoniawines" target="_blank">
                         <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/twitter.png" class="social-icon" />
                     </a>
-                    <a href="https://www.pinterest.com/ansoniawines/">
+                    <a href="https://www.pinterest.com/ansoniawines/" target="_blank">
                         <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/pinterest.png" class="social-icon" />
                     </a>
                 </div>
