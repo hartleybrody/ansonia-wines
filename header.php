@@ -77,12 +77,6 @@
                     ?>
                 </ul>
 
-                <style>
-                    .social-icon {
-                        width: 24px;
-                        margin: 2px;
-                    }
-                </style>
                 <div style="float:right; opacity: 0.6; position: relative; top: 5px;">
                     <a href="http://instagram.com/AnsoniaWines" target="_blank">
                         <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/instagram.png" class="social-icon" />

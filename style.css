@@ -63,6 +63,10 @@ a:hover{
     color: #888;
     text-decoration: none;
 }
+#header .social-icon {
+    width: 24px;
+    margin: 2px;
+}
 #header #call-to-action {
     color: #333;
     text-transform: uppercase;
