@@ -338,6 +338,10 @@ h2.widgettitle:first-child{
     .result-image{
         max-width: 200px;
     }
+
+    #post-content {
+        width: 90%;
+    }
 }
  
 /* Landscape phone and down */

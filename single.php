@@ -22,7 +22,7 @@ get_header(); ?>
                     <?php the_content(); ?>
                 </article>
             </div>
-            <div class="span4">
+            <div class="span4 visible-desktop">
                 <?php get_sidebar('post'); ?>
             </div>
         </div>
