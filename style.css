@@ -343,6 +343,22 @@ h2.widgettitle:first-child{
         width: 90%;
     }
 
+    .navbar-inner {
+        background: white;
+        border-radius: 0px;
+    }
+
+    .btn-navbar {
+        background: #990000 !important;
+        border-radius: 0px;
+    }
+
+    .brand {
+        color: black;
+        text-transform: uppercase;
+        font-family: 'Georgia', serif;
+    }
+
     #mobile-links {
         list-style-type: none;
     }
