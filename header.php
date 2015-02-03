@@ -77,9 +77,31 @@
                     ?>
                 </ul>
 
+                <style>
+                    .social-icon {
+                        width: 24px;
+                        margin: 2px;
+                    }
+                </style>
+                <div style="float:right; opacity: 0.6; position: relative; top: 5px;">
+                    <a href="http://instagram.com/AnsoniaWines">
+                        <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/instagram.png" class="social-icon" />
+                    </a>
+                    <a href="https://www.facebook.com/AnsoniaWines">
+                        <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/facebook.png" class="social-icon" />
+                    </a>
+                    <br>
+                    <a href="https://twitter.com/ansoniawines">
+                        <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/twitter.png" class="social-icon" />
+                    </a>
+                    <a href="https://www.pinterest.com/ansoniawines/">
+                        <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/pinterest.png" class="social-icon" />
+                    </a>
+                </div>
+
                 <br>
                 <span id="call-to-action">
-                    Join our email list:
+                    Join our list: &nbsp;&nbsp;
                 </span>
                 <!-- constant contact form -->
                 <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="display: inline;">
