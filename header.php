@@ -46,7 +46,7 @@
 <body <?php body_class(); ?>>
 
     <div class="container">
-        <div id="header" class="row clearfix">
+        <div id="header" class="row clearfix visible-desktop">
             <div class="span6">
                 <a href="<?php echo get_site_url(); ?>">
                     <h1 id="site-title"><?php bloginfo( 'name' ); ?></h1>
@@ -114,7 +114,7 @@
         <hr />
 
         <!-- header slideshow, only shown on homepage -->
-        <div class="row" id="main-slideshow" <?php if (!is_home()){ echo('style="display:none"');} ?>>
+        <div class="row visible-desktop" id="main-slideshow" <?php if (!is_home()){ echo('style="display:none"');} ?>>
             <div class="span12">
                 <div id="myCarousel" class="carousel slide">
                     <!-- Carousel items -->
