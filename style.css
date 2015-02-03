@@ -17,6 +17,7 @@ a:hover{
     float:right;
     padding-left: 10px;
 }
+
 /**
     header stuff
 **/
@@ -315,12 +316,36 @@ h2.widgettitle:first-child{
     }
 }
  
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { 
+/* Portrait tablet and down */
+@media (max-width: 979px) {
+    #main-content{
+        text-align: center;
+    }
+
+    .post-more a{
+        color: #990000;
+        text-transform: uppercase;
+    }
+
+    #main-content .post-date {
+        position: relative;
+        top: -25px;
+        margin-bottom: -25px;
+        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .result-image{
+        max-width: 200px;
+    }
+}
+ 
+/* Landscape phone and down */
+@media (max-width: 767px) {
 
 }
  
-/* Landscape phones and down */
+/* Portrait phones and down */
 @media (max-width: 480px) {
 
 }

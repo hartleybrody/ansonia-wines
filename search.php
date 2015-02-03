@@ -26,7 +26,7 @@ get_header(); ?>
                     </div>
                     <div class="span8">
                         <div class="post-date">
-                            <span class="post-date">
+                            <span>
                                 <?php echo get_the_date('l, F j, Y'); ?>
                             </span>
                         </div> <!--.post-date-->
@@ -45,7 +45,7 @@ get_header(); ?>
 
                         <div class="post-more">
                             <a href="<?php the_permalink() ?>">
-                                Read More &rarr;
+                                Read More <span class="visible-desktop">&rarr;</span>
                             </a>
                         </div> <!--.post-more-->
                     </div>
