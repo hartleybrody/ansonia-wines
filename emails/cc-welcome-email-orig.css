@@ -1,0 +1,61 @@
+.MAINTEXT{
+    FONT-FAMILY: Arial,Helvetica,sans-serif;
+    FONT-SIZE: 14pt;
+    COLOR: #333333;
+}
+.BODY{
+    BACKGROUND-COLOR: #FFFFFF;
+    MARGIN: 0px 0px 0px 0px;
+}
+.SIGNATURELINK{
+    COLOR: #ff6600;
+}
+.MAINTABLEBG{
+    BACKGROUND-COLOR: #FFFFFF;
+}
+.TITLETEXT{
+    FONT-FAMILY: Arial,Helvetica,sans-serif;
+    FONT-SIZE: 18pt;
+    COLOR: #444444;
+}
+.SUBTITLETEXT{
+    FONT-FAMILY: Georgia,Times New Roman,Times,Serif;
+    FONT-SIZE: 8pt;
+    COLOR: #FFFFFF;
+}
+.BORDER1{
+    BACKGROUND-COLOR: #ffffff;
+}
+.HR{
+    COLOR: #666666;
+}
+.COUPONBORDER{
+    BACKGROUND-COLOR: #000066;
+}
+.COUPONBG{
+    BACKGROUND-COLOR: #FFFFFF;
+}
+.COUPONTITLE{
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 18pt;
+    COLOR: #000066;
+}
+.COUPONTEXT{
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+}
+.COUPONEXPIRATION{
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    COLOR: #999999;
+}
+.COUPONLINK{
+    COLOR: #006699;
+    FONT-WEIGHT: bold;
+}
+.COUPONLINKALIGN{
+    TEXT-ALIGN: right;
+    PADDING-TOP: 5px;
+    PADDING-RIGHT: 5px;
+}
