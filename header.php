@@ -111,6 +111,72 @@
             </div>
         </div><!-- #header.row -->
 
+        <div class="navbar hidden-desktop">
+            <div class="navbar-inner">
+                <div class="container">
+         
+                    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+         
+                    <!-- Be sure to leave the brand out there if you want it shown -->
+                    <a class="brand" href="/">Ansonia Wines</a>
+         
+                    <!-- Everything you want hidden at 940px or less, place within here -->
+                    <div class="nav-collapse collapse">
+                        <!-- .nav, .navbar-search, .navbar-form, etc -->
+                        <ul id="mobile-links">
+                            <!-- navigation links -->
+                            <?php 
+                                $bookmarks_args = array(
+                                    'limit' => -1, 
+                                    'category' => 3, 
+                                    );
+                                $bookmarks = get_bookmarks($bookmarks_args);
+
+                                // sort the order of the links by their rating
+                                // function sort_by_rating($a, $b){
+                                //     if ($a->link_rating == $b->link_rating) {
+                                //         return 0;
+                                //     }
+                                //     return ($a->link_rating < $b->link_rating) ? -1 : 1;
+                                // }
+                                usort($bookmarks, "sort_by_rating");
+                                
+                                foreach ($bookmarks as $bookmark) {
+                                    $bookmark_repr = '<li class="link"><a href="' . $bookmark->link_url . '">' . $bookmark->link_name . '</a></li>';
+                                    echo($bookmark_repr);
+                                }
+                            ?>
+                            <li class="link">
+                                <a href="#">Join Our Email List</a>
+                            </li>
+                            <li class="link">
+                                <div style="opacity: 0.6;">
+                                    <a href="http://instagram.com/AnsoniaWines" target="_blank">
+                                        <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/instagram.png" class="social-icon" />
+                                    </a>
+                                    <a href="https://www.facebook.com/AnsoniaWines" target="_blank">
+                                        <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/facebook.png" class="social-icon" />
+                                    </a>
+                                    <a href="https://twitter.com/ansoniawines" target="_blank">
+                                        <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/twitter.png" class="social-icon" />
+                                    </a>
+                                    <a href="https://www.pinterest.com/ansoniawines/" target="_blank">
+                                        <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/icons/pinterest.png" class="social-icon" />
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+         
+                </div>
+            </div>
+        </div>
+
         <hr />
 
         <!-- header slideshow, only shown on homepage -->

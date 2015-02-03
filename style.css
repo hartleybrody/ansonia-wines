@@ -342,6 +342,27 @@ h2.widgettitle:first-child{
     #post-content {
         width: 90%;
     }
+
+    #mobile-links {
+        list-style-type: none;
+    }
+
+    #mobile-links li {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    #mobile-links li a {
+        color: black;
+        text-transform: uppercase;
+        font-family: 'Georgia', serif;
+        font-size: 1.2em;
+    }
+
+    #mobile-links .social-icon {
+        width: 32px;
+        margin: 0 10px;
+    }
 }
  
 /* Landscape phone and down */
