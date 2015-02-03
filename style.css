@@ -151,6 +151,24 @@ h1.post-title{
 
 
 /****************************************************
+    search.php
+****************************************************/
+
+#search-terms{
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-size: 1.6em;
+    margin: 20px 0 50px;
+}
+#search-terms .terms {
+    color: #990000;
+}
+.result{
+    margin-bottom: 35px;
+}
+
+
+/****************************************************
     archive.php
 ****************************************************/
 .archive-header{
