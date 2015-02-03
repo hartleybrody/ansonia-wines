@@ -10,7 +10,7 @@ get_header(); ?>
         
         <div class="row">
             <div class="span12" id="search-terms">
-                search results for: <span class="terms">"<?php echo get_search_query(); ?>"</span>
+                search results: <span class="terms">"<?php echo get_search_query(); ?>"</span>
             </div>
         </div>
         
@@ -21,7 +21,7 @@ get_header(); ?>
                 <?php if (get_post_type() == "post"): // it's a blog article?>
                     <div class="span4">
                         <a href="<?php the_permalink() ?>" >
-                            <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" class="tile-post-img hover-swap" />
+                            <img src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" class="result-image" />
                         </a>
                     </div>
                     <div class="span8">

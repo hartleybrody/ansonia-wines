@@ -131,7 +131,7 @@ h1.post-title{
     color: #333;
     font-family: 'Georgia', serif;
     font-weight: 100;
-    font-size: 1.1em;
+    font-size: 1.0em;
 
     display: block;
     margin-top: 5px;
@@ -164,7 +164,15 @@ h1.post-title{
     color: #990000;
 }
 .result{
-    margin-bottom: 35px;
+    margin-bottom: 45px;
+}
+
+.result .result-image {
+    max-width: 260px;
+}
+
+.result .post-date{
+    margin-bottom:-10px;
 }
 
 
