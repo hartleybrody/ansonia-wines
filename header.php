@@ -155,7 +155,9 @@
                                 <hr />
                             </li>
                             <li class="link">
-                                <a href="#">Join Our Email List</a>
+                                <a target="_blank" href="http://visitor.r20.constantcontact.com/d.jsp?llr=uutyaedab&p=oi&m=1102867877524&sit=kyqzuxveb&f=4d0c5e44-19e7-4cbd-9f6f-32dfc8bc93ff">
+                                    Join Our Email List
+                                </a>
                             </li>
                             <li>
                                 <hr />
