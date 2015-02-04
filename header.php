@@ -187,8 +187,9 @@
 
         <hr class="visible-desktop" />
 
+        <?php if ( is_home() ) : ?>
         <!-- header slideshow, only shown on homepage -->
-        <div class="row visible-desktop" id="main-slideshow" <?php if (!is_home()){ echo('style="display:none"');} ?>>
+        <div class="row visible-desktop" id="main-slideshow">
             <div class="span12">
                 <div id="myCarousel" class="carousel slide">
                     <!-- Carousel items -->
@@ -223,6 +224,7 @@
                 </div>
             </div>
         </div>
+        <?php endif; ?>
 
         <div class="modal fade hide" style="height:325px; width:850px;" >
             <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/pop-up-tiles.jpg" style="height:325px; max-width:300px; float:left"/>
