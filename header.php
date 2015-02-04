@@ -183,7 +183,7 @@
             </div>
         </div>
 
-        <hr />
+        <hr class="visible-desktop" />
 
         <!-- header slideshow, only shown on homepage -->
         <div class="row visible-desktop" id="main-slideshow" <?php if (!is_home()){ echo('style="display:none"');} ?>>
