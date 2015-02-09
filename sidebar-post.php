@@ -8,9 +8,10 @@
 ?>
             <div id="sidebar">
                 <ul>
-                        <?php 
-                        
-                            $vigneron = get_post_meta($post->ID, 'vigneron', True);
+                        <?php
+
+
+                            $vignerons = get_the_terms( $post->ID, 'vigneron');
                             $location = get_post_meta($post->ID, 'location', True);
                             $grape = get_post_meta($post->ID, 'grape', True);
                             $vintage = get_post_meta($post->ID, 'vintage', True);
@@ -25,10 +26,14 @@
                             }
 
                             echo("<ul class='unstyled'>");
-
-                            if($vigneron){
+                            if($vignerons){
                                 echo '<li><span class="key">Vigneron:</span> <span class="value">';
-                                echo $vigneron;
+                                foreach ($vignerons as $vigneron) {
+                                    echo '<a href="http://www.ansoniawines.com/vigneron/' . $vigneron->slug . '/">';
+                                    echo $vigneron->name;
+                                    echo '</a>';
+                                }
+                                
                                 echo '</span></li>';
                             }
 
