@@ -18,12 +18,33 @@ get_header(); ?>
                 <div class="span8 offset2" id="main-content">
                     <?php if ( have_posts() ) : ?>
 
-                        <div class="row">
-                            <div class="span8">
-                                <hr />
-                                <h4 class="page-title">Recent Posts</h4>
+                        <?php if ( is_home() ) : ?>
+                            <div class="row">
+                                <div class="span8">
+                                    <h4 class="page-title">Recent Posts</h4>
+                                </div>
                             </div>
-                        </div>
+                        <?php endif; ?>
+
+                        <?php if ( is_tax() ) : ?>
+                            <div class="row">
+                                <div class="span8">
+                                    <?php 
+                                        $term = $wp_query->get_queried_object();
+                                        $title = $term->name;
+                                        $description = $term->description;
+                                    ?>
+
+
+                                    <h4 class="page-title"><?php echo $title; ?></h4>
+                                    <p class="page-subtitle">
+                                        <?php echo $description; ?>
+                                    </p>
+                                </div>
+                            </div>
+                        <?php endif; ?>
+                        
+
 
                         <?php while ( have_posts() ) : the_post(); ?>
                             
