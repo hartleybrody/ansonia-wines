@@ -22,15 +22,11 @@
                 $.cookie("hasSeenModal", true, { expires: 3 });
 
                 if ($(window).width() > 940 && $(window).height() > 400){ // only show the modal if they're on a big enough screen
-                    console.log("got here 1");
                     // show and center the modal
                     setTimeout( function(){
                         $('.modal').modal({
                             show: true
                         }).css({
-                            'margin-top': function () { // vertical centering
-                                return -($(this).height() / 2);
-                            },
                             'margin-left': function () { // horizontal centering
                                 return -($(this).width() / 2);
                             }
