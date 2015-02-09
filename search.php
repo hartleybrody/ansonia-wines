@@ -17,6 +17,7 @@ get_header(); ?>
     <?php if (have_posts()) : ?>
 
         <?php while ( have_posts() ) : the_post(); ?>
+            <?php if ($post->post_type == 'page') continue; ?>
             <div class="row result">
                 <?php if (get_post_type() == "post"): // it's a blog article?>
                     <div class="span4">
