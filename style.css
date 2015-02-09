@@ -129,9 +129,10 @@ a:hover{
     width: 100%;
 }
 
-.post-title a{
+.post-title a h3{
     color: #993333;
     font-family: 'Georgia', serif;
+    line-height: 30px;
 }
 h1.post-title{
     color: #990000;
@@ -329,6 +330,7 @@ h2.widgettitle:first-child{
 /* Portrait tablet and down */
 @media (max-width: 979px) {
     #main-content{
+        margin-top: 45px;
         text-align: center;
     }
 
@@ -338,11 +340,8 @@ h2.widgettitle:first-child{
     }
 
     #main-content .post-date {
-        position: relative;
-        top: -25px;
-        margin-bottom: -25px;
-        background-color: #fff;
-        background-color: rgba(255, 255, 255, 0.7);
+        color: #ccc;
+        margin: 7px 0 -7px;
     }
 
     .result-image{
@@ -351,6 +350,14 @@ h2.widgettitle:first-child{
 
     #post-content {
         width: 90%;
+    }
+
+    .index-page-title {
+        display: none;
+    }
+
+    .post-excerpt {
+        text-align: left;
     }
 
     .navbar {
@@ -369,6 +376,7 @@ h2.widgettitle:first-child{
         background: white;
         border-radius: 0px;
         border: 0;
+        margin-right: 0px;
     }
 
     .navbar-inner .btn-navbar .icon-bar {

@@ -21,7 +21,7 @@ get_header(); ?>
                         <?php if ( is_home() ) : ?>
                             <div class="row">
                                 <div class="span8">
-                                    <h4 class="page-title">Recent Posts</h4>
+                                    <h4 class="page-title index-page-title">Recent Posts</h4>
                                 </div>
                             </div>
                         <?php endif; ?>
@@ -83,7 +83,7 @@ get_header(); ?>
 
                                     <div class="post-more">
                                         <a href="<?php the_permalink() ?>">
-                                            Read More <span class="visible-desktop">&rarr;</span>
+                                            Read More <span class="">&rarr;</span>
                                         </a>
                                     </div> <!--.post-more-->
                                     
