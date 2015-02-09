@@ -329,9 +329,12 @@ h2.widgettitle:first-child{
  
 /* Portrait tablet and down */
 @media (max-width: 979px) {
-    #main-content{
+    #main-content, #post-content, #page-content{
         margin-top: 45px;
         text-align: center;
+    }
+    #main-content p, #post-content p, #page-content p{
+        overflow: hidden;
     }
 
     .post-more a{
@@ -346,10 +349,6 @@ h2.widgettitle:first-child{
 
     .result-image{
         max-width: 200px;
-    }
-
-    #post-content {
-        width: 90%;
     }
 
     .index-page-title {
