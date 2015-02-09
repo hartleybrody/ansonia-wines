@@ -16,6 +16,7 @@ get_header(); ?>
         
     <?php if (have_posts()) : ?>
 
+        <?php query_posts('orderby=date&order=DESC&s=' . $_GET['s']); ?>
         <?php while ( have_posts() ) : the_post(); ?>
             <?php if ($post->post_type == 'page') continue; ?>
             <div class="row result">
