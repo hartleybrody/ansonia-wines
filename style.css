@@ -336,6 +336,7 @@ h2.widgettitle:first-child{
     #main-content p, #post-content p, #page-content p{
         overflow: hidden;
     }
+    #post-3118 { text-align: left; }
 
     .post-more a{
         color: #990000;
