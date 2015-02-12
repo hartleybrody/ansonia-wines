@@ -22,6 +22,7 @@ get_header(); ?>
                             <div class="row">
                                 <div class="span8">
                                     <h4 class="page-title index-page-title">Recent Posts</h4>
+                                    <br />
                                 </div>
                             </div>
                         <?php endif; ?>
