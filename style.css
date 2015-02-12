@@ -360,6 +360,7 @@ h2.widgettitle:first-child{
     }
 
     .navbar {
+        padding: 5px 3px;
         margin: -25px;
         border: 0;
     }
