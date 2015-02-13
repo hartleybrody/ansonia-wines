@@ -113,22 +113,6 @@
 
                         ?>
                     </li>-->
-                    <?php if ( wp_get_post_terms($post->ID, 'vigneron') ) : ?>
-                    <li class="widget">
-                        <h2 class="widgettitle">Winemaker Profile</h2>
-                        <?php 
-                            $results = wp_get_post_terms($post->ID, 'vigneron');
-                            // print_r($results);
-                           
-                            $first_key = key($results);
-                            $slug = $results[$first_key]->slug;
-                            echo("<p class='lead'>");
-                            echo($results[0]->description);
-                            echo("</p>");
-
-                        ?>
-                    </li>
-                    <?php endif; ?>
                     <?php dynamic_sidebar( 'post' ); ?>
                 </ul>
             </div>
