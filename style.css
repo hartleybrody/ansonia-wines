@@ -329,6 +329,7 @@ h2.widgettitle:first-child{
  
 /* Portrait tablet and down */
 @media (max-width: 979px) {
+    html{ width: 99%;}
     #main-content, #post-content, #page-content{
         margin-top: 45px;
     }
