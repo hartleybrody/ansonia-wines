@@ -100,6 +100,8 @@ get_header(); ?>
                             <div style="float:right;"><?php next_posts_link('Earlier Posts &raquo;', 0) ?></div>
                         </div>
 
+                        <hr class="hidden-desktop" />
+
                     <?php else : ?>
 
                         <h4>No Posts</h4>
