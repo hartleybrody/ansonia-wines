@@ -27,7 +27,7 @@ get_header(); ?>
                             </div>
                         <?php endif; ?>
 
-                        <?php if ( is_tax() ) : ?>
+                        <?php if ( is_tax() || is_category() ) : ?>
                             <div class="row">
                                 <div class="span8">
                                     <?php 
