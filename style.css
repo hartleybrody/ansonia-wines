@@ -329,7 +329,11 @@ h2.widgettitle:first-child{
  
 /* Portrait tablet and down */
 @media (max-width: 979px) {
-    html{ width: 99%;}
+    html { 
+        padding-left: 2px;
+        width: 98%;
+        overflow-x: hidden;
+    }
     #main-content, #post-content, #page-content{
         margin-top: 45px;
     }
