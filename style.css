@@ -380,7 +380,7 @@ h2.widgettitle:first-child{
         background: white;
         border-radius: 0px;
         border: 0;
-        margin-right: 0px;
+        margin-right: -15px;
     }
 
     .navbar-inner .btn-navbar .icon-bar {
