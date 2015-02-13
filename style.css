@@ -331,6 +331,8 @@ h2.widgettitle:first-child{
 @media (max-width: 979px) {
     #main-content, #post-content, #page-content{
         margin-top: 45px;
+    }
+    #main-content, #page-content{
         text-align: center;
     }
     #main-content p, #post-content p, #page-content p{
