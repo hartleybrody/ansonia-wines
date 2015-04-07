@@ -208,7 +208,12 @@
                     <!-- Carousel items -->
                     <div class="carousel-inner">
                         <div class="item">
-                            <a href="http://www.ansoniawines.com/about">
+                            <a href="http://www.ansoniawines.com/tag/saturday-recipe">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2015/03/lobster_banner.jpg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.ansoniawines.com/about/">
                                 <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/about_slide2.jpg">
                             </a>
                         </div>
@@ -218,8 +223,18 @@
                             </a>
                         </div>
                         <div class="item active">
+                            <a href="http://www.ansoniawines.com/futures/">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2015/04/april_banner.jpg">
+                            </a>
+                        </div>
+                        <div class="item">
                             <a href="http://www.ansoniawines.com/newton">
                                 <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/panorama_slide.jpg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.ansoniawines.com/2015/04/spring-mix-six-pack-99/">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2015/04/spring_banner.jpg">
                             </a>
                         </div>
                         <!-- SAMPLE SLIDESHOW ITEM TO COPY
