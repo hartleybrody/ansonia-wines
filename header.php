@@ -246,13 +246,24 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top: -15px; margin-right: 10px;">&times;</button>
                 <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/welcome-modal-text.jpg" style="margin-left:-5px" />
                 <!-- constant contact form -->
-                <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="margin-top: 10px;">
+                <!-- <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="margin-top: 10px;">
                     <input type="text" name="ea" value="" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; border:1px solid #CCCCCC; width:250px; " class="input-large input" placeholder="Email Address...">
                     <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -4px; height:30px">
                     <input type="hidden" name="m" value="1102867877524">
                     <input type="hidden" name="p" value="oi">
-                </form>
+                </form> -->
                 <!-- end constant contact form -->
+
+                <!-- Begin MailChimp Signup Form -->
+                <form action="//ansoniawines.us10.list-manage.com/subscribe/post?u=ecdc119b3e0f9307376bd0bb7&amp;id=c9624d5296" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="margin-top: 10px;">
+                    <input type="email" value="" name="EMAIL" class="required email input-large input" id="mce-EMAIL" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; border:1px solid #CCCCCC; width:250px;" placeholder="Email Address...">
+                    <div style="position: absolute; left: -5000px;">
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <input type="text" name="b_ecdc119b3e0f9307376bd0bb7_c9624d5296" tabindex="-1" value="">
+                    </div>
+                    <input type="submit" value="GO" name="subscribe" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -4px; height:30px">
+                </form>
+                <!--End mc_embed_signup-->
 
                 <hr style="margin:5px 0; margin-right: 100px" />
 
