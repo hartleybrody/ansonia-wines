@@ -99,14 +99,6 @@
                 <span id="call-to-action">
                     Join our list:
                 </span>
-                <!-- constant contact form -->
-                <!-- <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="display: inline;">
-                    <input type="text" name="ea" value="" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #CCCCCC; width:170px" class="input-large input" placeholder="Email Address...">
-                    <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -4px; height:30px">
-                    <input type="hidden" name="m" value="1102867877524">
-                    <input type="hidden" name="p" value="oi">
-                </form> -->
-                <!-- end constant contact form -->
 
                 <!-- Begin MailChimp Signup Form -->
                 <form action="//ansoniawines.us10.list-manage.com/subscribe/post?u=ecdc119b3e0f9307376bd0bb7&amp;id=c9624d5296" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display: inline;">
@@ -260,14 +252,6 @@
             <div style="padding-top: 20px; padding-left: 350px">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="margin-top: -15px; margin-right: 10px;">&times;</button>
                 <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/welcome-modal-text.jpg" style="margin-left:-5px" />
-                <!-- constant contact form -->
-                <!-- <form name="ccoptin" action="http://visitor.constantcontact.com/d.jsp" target="_blank" method="post" style="margin-top: 10px;">
-                    <input type="text" name="ea" value="" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; border:1px solid #CCCCCC; width:250px; " class="input-large input" placeholder="Email Address...">
-                    <input type="submit" name="go" value="GO" class="submit" style="font-family:Verdana,Arial,Helvetica,sans-serif; font-size:10px; position: relative; top: -4px; height:30px">
-                    <input type="hidden" name="m" value="1102867877524">
-                    <input type="hidden" name="p" value="oi">
-                </form> -->
-                <!-- end constant contact form -->
 
                 <!-- Begin MailChimp Signup Form -->
                 <form action="//ansoniawines.us10.list-manage.com/subscribe/post?u=ecdc119b3e0f9307376bd0bb7&amp;id=c9624d5296" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="margin-top: 10px;">
