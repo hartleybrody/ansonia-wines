@@ -95,6 +95,23 @@ a:hover{
 /****************************************************
     index.php
 ****************************************************/
+.mobile-nav-btn {
+    background: #993333;
+    font-family: "Georgia", serif;
+    color: white;
+    text-transform: uppercase;
+
+    display: inline-block;
+    width: 45%;
+    padding: 8px 0;
+    margin: 8px 5px;
+    border-radius: 5px;
+}
+.mobile-nav-btn:active {
+    color: white;
+}
+
+
 #index-pagination {
     padding: 15px 0;
     font-family: "Georgia", serif;
@@ -358,10 +375,6 @@ h2.widgettitle:first-child{
 
     .result-image{
         max-width: 200px;
-    }
-
-    .index-page-title {
-        display: none;
     }
 
     .post-excerpt {

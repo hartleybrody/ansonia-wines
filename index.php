@@ -21,6 +21,13 @@ get_header(); ?>
                         <?php if ( is_home() ) : ?>
                             <div class="row">
                                 <div class="span8">
+                                    <div class="hidden-desktop">
+                                        <a href="/about/" class="mobile-nav-btn">About Us</a>
+                                        <a href="/newton/" class="mobile-nav-btn">Warehouse</a>
+                                        <a href="/ordering/" class="mobile-nav-btn">How to Order</a>
+                                        <a href="/join/" class="mobile-nav-btn">Join the List</a>
+                                    </div>
+                                    <hr class="hidden-desktop" style="border-bottom:1px solid black; border-top: none"/>
                                     <h4 class="page-title index-page-title">Recent Posts</h4>
                                     <br />
                                 </div>
