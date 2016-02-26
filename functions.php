@@ -140,3 +140,27 @@ function build_taxonomies() {
     	)
     );
 }
+
+// [bartag foo="foo-value"]
+function recent_posts_func( $atts ) {
+
+	// get the posts and term for this taxonomy
+	$posts = get_posts( array(
+	     'posts_per_page' => 3,
+	     'vigneron' => $atts['vigneron'],
+	));
+
+	$vigneron = get_term_by('slug', $atts['vigneron'], 'vigneron');
+
+	// build the HTML
+	$return_html = "<div class='recent-posts text-center'><h3>Recent " . $vigneron->name . " Posts </h3><hr><ul class='unstyled'>";
+	foreach ( $posts as $post ) {
+		$post_html = "<li class='recent-post'>";
+		$post_html .= mysql2date('n.d.y', $post->post_date); // https://codex.wordpress.org/Formatting_Date_and_Time
+		$post_html .= ": <a href='" . get_permalink( $post ) . "'>\"" . $post->post_title . "\"</a>";
+		$post_html .= "</li>";
+		$return_html .= $post_html;
+	}
+    return $return_html . "</ul><hr></div>";
+}
+add_shortcode( 'recent_posts', 'recent_posts_func' );
