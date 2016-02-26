@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
     
+    <meta name="p:domain_verify" content="baf89b49d584666650e94a5f7e812e27"/>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,6 +43,24 @@
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
     
     <?php wp_head(); ?>
+
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+_fbq.push(['addPixelId', '440268149467186']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=440268149467186&amp;ev=PixelInitialized" /></noscript>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -97,12 +116,12 @@
 
                 <br>
                 <span id="call-to-action">
-                    Join our list:
+                <span style="color: #990000;">Join the list:</span>
                 </span>
 
                 <!-- Begin MailChimp Signup Form -->
                 <form action="//ansoniawines.us10.list-manage.com/subscribe/post?u=ecdc119b3e0f9307376bd0bb7&amp;id=c9624d5296" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display: inline;">
-                    <input type="email" value="" name="EMAIL" class="required email input-large input" id="mce-EMAIL" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #CCCCCC; width:170px" placeholder="Email Address...">
+                    <input type="email" value="" name="EMAIL" class="required email input-large input" id="mce-EMAIL" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #990000; width:170px" placeholder="Email Address...">
                     <div style="position: absolute; left: -5000px;">
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <input type="text" name="b_ecdc119b3e0f9307376bd0bb7_c9624d5296" tabindex="-1" value="">
@@ -199,34 +218,39 @@
                 <div id="myCarousel" class="carousel slide">
                     <!-- Carousel items -->
                     <div class="carousel-inner">
+                     
                         <div class="item">
-                            <a href="http://www.ansoniawines.com/tag/saturday-recipe">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2015/03/lobster_banner.jpg">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="http://www.ansoniawines.com/about/">
+                            <a href="http://www.ansoniawines.com/about?utm_source=carousel&utm_medium=banner&utm_campaign=Carousel-banner
+">
                                 <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/about_slide2.jpg">
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="http://www.ansoniawines.com/ordering/">
+			<div class="item active">
+                            <a href="http://www.ansoniawines.com/wp-content/uploads/2016/02/february-ansonia-notebook.pdf#page=8">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/02/banner-25off2.jpg">
+                            </a>
+                        </div>
+			<div class="item">
+                            <a href="http://www.ansoniawines.com/wp-content/uploads/2016/02/february-ansonia-notebook.pdf">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/02/index-banner.jpg">
+                            </a>
+                        </div>
+			<div class="item">
+                            <a href="http://www.ansoniawines.com/join?utm_source=carousel&utm_medium=banner&utm_campaign=Join-Banner
+">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/01/JOIN_BANNER.jpg">
+                            </a>
+                        </div>
+			<div class="item">
+                            <a href="http://www.ansoniawines.com/ordering?utm_source=carousel&utm_medium=banner&utm_campaign=Ordering-Carousel
+">
                                 <img src="http://www.ansoniawines.com/wp-content/uploads/2014/10/ordering_banner_slide.jpg">
                             </a>
                         </div>
-                        <div class="item active">
-                            <a href="http://www.ansoniawines.com/futures/">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2015/04/april_banner.jpg">
-                            </a>
-                        </div>
                         <div class="item">
-                            <a href="http://www.ansoniawines.com/newton">
+                            <a href="http://www.ansoniawines.com/newton?utm_source=carousel&utm_medium=banner&utm_campaign=Newton-Carousel
+">
                                 <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/panorama_slide.jpg">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="http://www.ansoniawines.com/2015/04/spring-mix-six-pack-99/">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2015/04/spring_banner.jpg">
                             </a>
                         </div>
                         <!-- SAMPLE SLIDESHOW ITEM TO COPY
