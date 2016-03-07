@@ -282,8 +282,12 @@ h1.post-title{
 }
 
 .recent-posts .recent-post {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.recent-posts .recent-post a {
+    text-decoration: underline;
 }
 
 /****************************************************
