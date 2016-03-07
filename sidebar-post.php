@@ -29,7 +29,7 @@
                             if($vignerons){
                                 echo '<li><span class="key">Vigneron:</span> <span class="value">';
                                 foreach ($vignerons as $vigneron) {
-                                    echo '<a href="' . site_url() . '/vigneron/' . $vigneron->slug . '/">';
+                                    echo '<a href="' . site_url() . '/' . $vigneron->slug . '/">';
                                     echo $vigneron->name;
                                     echo '</a>';
                                 }
