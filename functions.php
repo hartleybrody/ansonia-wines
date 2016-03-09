@@ -153,7 +153,7 @@ function recent_posts_func( $atts ) {
 	$vigneron = get_term_by('slug', $atts['vigneron'], 'vigneron');
 
 	// build the HTML
-	$return_html = "<div class='recent-posts text-center'><h3>Recent " . $vigneron->name . " Posts </h3><hr><ul class='unstyled'>";
+	$return_html = "<div class='recent-posts'><h3>Recent " . $vigneron->name . " Posts </h3><ul class='unstyled'>";
 	foreach ( $posts as $post ) {
 		$post_html = "<li class='recent-post'>";
 		$post_html .= mysql2date('n.d.y', $post->post_date); // https://codex.wordpress.org/Formatting_Date_and_Time
@@ -161,6 +161,6 @@ function recent_posts_func( $atts ) {
 		$post_html .= "</li>";
 		$return_html .= $post_html;
 	}
-    return $return_html . "</ul><hr></div>";
+    return $return_html . "</ul></div>";
 }
 add_shortcode( 'recent_posts', 'recent_posts_func' );

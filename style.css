@@ -274,6 +274,10 @@ h1.post-title{
     font-family: 'Georgia', serif;
 }
 
+.recent-posts {
+    margin: 30px 0;
+}
+
 .recent-posts h3 {
     text-transform: uppercase;
     font-weight: 100;
@@ -284,7 +288,7 @@ h1.post-title{
 
 .recent-posts .recent-post {
     font-size: 13pt;
-    line-height: 1.5;
+    line-height: 1.8;
     text-align: center;
 }
 
