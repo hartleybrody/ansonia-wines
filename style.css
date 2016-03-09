@@ -279,11 +279,13 @@ h1.post-title{
     font-weight: 100;
     font-size: 22px;
     line-height: 24px;
+    text-align: center;
 }
 
 .recent-posts .recent-post {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 13pt;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .recent-posts .recent-post a {
