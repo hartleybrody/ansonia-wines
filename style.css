@@ -470,6 +470,10 @@ h2.widgettitle:first-child{
         width: 32px;
         margin: 0 5px;
     }
+
+    #about-us-video {
+        width: 100%
+    }
 }
  
 /* Landscape phone and down */
