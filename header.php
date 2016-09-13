@@ -225,20 +225,30 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                                 <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/about_slide2.jpg">
                             </a>
                         </div>
-			<div class="item active">
-                            <a href="http://www.ansoniawines.com/wp-content/uploads/2016/02/february-ansonia-notebook.pdf#page=8">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/02/banner-25off2.jpg">
-                            </a>
-                        </div>
-			<div class="item">
-                            <a href="http://www.ansoniawines.com/wp-content/uploads/2016/02/february-ansonia-notebook.pdf">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/02/index-banner.jpg">
-                            </a>
-                        </div>
 			<div class="item">
                             <a href="http://www.ansoniawines.com/join?utm_source=carousel&utm_medium=banner&utm_campaign=Join-Banner
 ">
                                 <img src="http://www.ansoniawines.com/wp-content/uploads/2016/01/JOIN_BANNER.jpg">
+                            </a>
+                        </div>
+			<div class="item">
+                            <a href="http://www.ansoniawines.com/sale">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/09/september-banner-saleshelf.jpg">
+                            </a>
+                        </div>
+			<div class="item active">
+                            <a href="http://www.ansoniawines.com/wp-content/uploads/2016/09/ansonia_september_futures.pdf">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/09/banner.jpg">
+                            </a>
+                        </div>
+			<div class="item">
+                            <a href="http://www.ansoniawines.com/mixedcases">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/08/mixed.jpg">
+                            </a>
+                        </div>
+			<div class="item">
+                            <a href="http://www.ansoniawines.com/about-video/">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/05/aboutvideo2.jpg">
                             </a>
                         </div>
 			<div class="item">
