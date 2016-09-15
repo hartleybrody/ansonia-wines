@@ -14,11 +14,11 @@
     $now = date('Y-m-d H:i:s');
 
     $postData = array(
-        'email_address' => 'hartley.brody+bar@gmail.com',
+        'email_address' => $_POST['email'],
         'status' => 'subscribed',
         'merge_fields' => array(
-            'FNAME' => 'Hartley',
-            'MMERGE3' => '02139'  // zipcode
+            'FNAME' => $_POST['name'],
+            'MMERGE3' => $_POST['zip']  // zipcode
         ),
 
         'ip_signup' => $_SERVER['REMOTE_ADDR'],
@@ -50,6 +50,10 @@
 
     // Decode the response
     $responseData = json_decode($response, TRUE);
-    print_r($responseData);
+    // print_r($responseData);
+
+    // echo "Thanks for subscribing!";
+    header("Location: http://www.ansoniawines.com/");
+    exit();
 
 ?>
