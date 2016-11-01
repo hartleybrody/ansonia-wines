@@ -160,6 +160,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                                     );
                                 $bookmarks = get_bookmarks($bookmarks_args);
 
+                                // COMMENTED OUT SINCE IT'S DECLARED ABOVE
                                 // sort the order of the links by their rating
                                 // function sort_by_rating($a, $b){
                                 //     if ($a->link_rating == $b->link_rating) {
@@ -212,64 +213,22 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
         <hr class="visible-desktop" />
 
         <?php if ( is_home() ) : ?>
-        <!-- header slideshow, only shown on homepage -->
-        <div class="row visible-desktop" id="main-slideshow">
+        <!-- homepage image nav -->
+        <div class="row visible-desktop" id="desktop-top-nav">
             <div class="span12">
-                <div id="myCarousel" class="carousel slide">
-                    <!-- Carousel items -->
-                    <div class="carousel-inner">
-
-                        <div class="item">
-                            <a href="http://www.ansoniawines.com/about?utm_source=carousel&utm_medium=banner&utm_campaign=Carousel-banner
-">
-                                <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/about_slide2.jpg">
-                            </a>
-                        </div>
-			<div class="item">
-                            <a href="http://www.ansoniawines.com/sale">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/09/september-banner-saleshelf.jpg">
-                            </a>
-                        </div>
-			<div class="item active">
-                            <a href="http://www.ansoniawines.com/thanksgiving">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/10/banner-tgiv.jpg">
-                            </a>
-                        </div>
-			<div class="item">
-                            <a href="http://www.ansoniawines.com/mixedcases">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/08/mixed.jpg">
-                            </a>
-                        </div>
-			<div class="item">
-                            <a href="http://www.ansoniawines.com/futures/">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2012/12/november_futures_banner.jpg">
-                            </a>
-                        </div>
-			<div class="item">
-                            <a href="http://www.ansoniawines.com/ordering?utm_source=carousel&utm_medium=banner&utm_campaign=Ordering-Carousel
-">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2014/10/ordering_banner_slide.jpg">
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="http://www.ansoniawines.com/newton?utm_source=carousel&utm_medium=banner&utm_campaign=Newton-Carousel
-">
-                                <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/panorama_slide.jpg">
-                            </a>
-                        </div>
-                        <!-- SAMPLE SLIDESHOW ITEM TO COPY
-                        <div class="item">
-                            <a href="{{link_goes_here}}">
-                                <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/{{file_name_goes_here}}.jpg" />
-                            </a>
-                        </div>
-                        END SAMPLE ITEM -->
-                    </div>
-
-                    <!-- Carousel nav -->
-                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-                </div>
+                <a href="http://www.ansoniawines.com/Collections" class="desktop-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk-col.jpg">
+                </a>
+                <a href="http://www.ansoniawines.com/Thanksgiving" class="desktop-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk-tgiv.jpg">
+                </a>
+                <a href="http://www.ansoniawines.com/Mixed" class="desktop-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk-mix.jpg">
+                </a>
+                <a href="http://www.ansoniawines.com/Fall-Futures" class="desktop-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk_fallfut.jpg">
+                </a>
+                <hr />
             </div>
         </div>
         <?php endif; ?>

@@ -2,10 +2,10 @@ body{
     margin:20px 0;
 }
 
-a{ 
+a{
     color: #006699;
 }
-a:hover{ 
+a:hover{
     color: #333;
     text-decoration: none;
 }
@@ -60,7 +60,7 @@ a:hover{
     font-weight: 100;
     font-size: 0.85em;
 }
-#header  .link a:hover{ 
+#header  .link a:hover{
     color: #888;
     text-decoration: none;
 }
@@ -85,7 +85,7 @@ a:hover{
     text-align: center;
 }
 
-.hover-fade:hover{ 
+.hover-fade:hover{
     opacity: 0.8;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -109,6 +109,13 @@ a:hover{
 }
 .mobile-nav-btn:active {
     color: white;
+}
+
+#desktop-top-nav .desktop-header-img {
+    margin-right: 17px;
+}
+#desktop-top-nav .desktop-header-img:last-child {
+    margin-right: 0;
 }
 
 
@@ -212,7 +219,7 @@ h1.post-title{
 .archive-header{
     margin-bottom: 20px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #888; 
+    border-bottom: 1px solid #888;
 }
 .excerpt{
     margin-bottom: 20px;
@@ -356,20 +363,20 @@ h2.widgettitle:first-child{
 ****************************************************/
 
 /* Large desktop */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
 
 }
- 
+
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
     #header{
         text-align: center;
     }
 }
- 
+
 /* Portrait tablet and down */
 @media (max-width: 979px) {
-    html { 
+    html {
         padding-left: 2px;
         width: 98%;
         overflow-x: hidden;
@@ -475,12 +482,12 @@ h2.widgettitle:first-child{
         width: 100%
     }
 }
- 
+
 /* Landscape phone and down */
 @media (max-width: 767px) {
 
 }
- 
+
 /* Portrait phones and down */
 @media (max-width: 480px) {
 
