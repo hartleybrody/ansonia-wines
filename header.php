@@ -247,6 +247,12 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 </a>
             </div>
         </div>
+        <!-- compensate for height of images, don't need to push the main content down as much as we do on other mobile pages for the navbar -->
+        <style type="text/css">
+            #main-content {
+                margin-top: 15px;
+            }
+        </style>
         <?php endif; ?>
 
         <div class="modal fade hide" style="height:325px; width:850px;" >
