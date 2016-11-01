@@ -125,9 +125,9 @@ if ( function_exists('register_sidebar') ) {
 	register_sidebars(1, array('name'=>'Page'));
 }
 
-// Custom Taxonomy Code  
-add_action( 'init', 'build_taxonomies', 0 );  
-  
+// Custom Taxonomy Code
+add_action( 'init', 'build_taxonomies', 0 );
+
 function build_taxonomies() {
     register_taxonomy(
     	'vigneron',
@@ -164,3 +164,10 @@ function recent_posts_func( $atts ) {
     return $return_html . "</ul></div>";
 }
 add_shortcode( 'recent_posts', 'recent_posts_func' );
+
+global $wp_version;
+if( version_compare( $wp_version, '4.4', '<' ) ) {
+    if ( ! function_exists( 'is_embed' ) ) {
+        function is_embed() { return false; }
+    }
+}
