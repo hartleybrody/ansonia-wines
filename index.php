@@ -21,12 +21,6 @@ get_header(); ?>
                         <?php if ( is_home() ) : ?>
                             <div class="row">
                                 <div class="span8">
-                                    <div class="hidden-desktop">
-                                        <a href="/about/" class="mobile-nav-btn">About Us</a>
-                                        <a href="/newton/" class="mobile-nav-btn">Warehouse</a>
-                                        <a href="/ordering/" class="mobile-nav-btn">How to Order</a>
-                                        <a href="/join/" class="mobile-nav-btn">Join the List</a>
-                                    </div>
                                     <hr class="hidden-desktop" style="border-bottom:1px solid black; border-top: none"/>
                                     <h4 class="page-title index-page-title">Recent Posts</h4>
                                     <br />
@@ -37,7 +31,7 @@ get_header(); ?>
                         <?php if ( is_tax() || is_category() ) : ?>
                             <div class="row">
                                 <div class="span8">
-                                    <?php 
+                                    <?php
                                         $term = $wp_query->get_queried_object();
                                         $title = $term->name;
                                         $description = $term->description;
@@ -51,22 +45,22 @@ get_header(); ?>
                                 </div>
                             </div>
                         <?php endif; ?>
-                        
+
 
 
                         <?php while ( have_posts() ) : the_post(); ?>
-                            
+
                             <div class="row post">
                                 <div class="span8">
 
                                     <div class="post-banner">
                                         <a href="<?php the_permalink() ?>" >
-                                            <img 
-                                                src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>" 
-                                                class="tile-post-img 
+                                            <img
+                                                src="<?php echo get_post_meta( $post->ID, 'full_banner', True ); ?>"
+                                                class="tile-post-img
                                                     <?php if( get_post_meta( $post->ID, 'full_banner_hover', True ) ){ echo "hover-swap"; } else{ echo "hover-fade"; }?>"
                                                 <?php if( get_post_meta( $post->ID, 'full_banner_hover', True ) ){ echo "data-alt-src='" . get_post_meta( $post->ID, 'full_banner_hover', True ) . "'"; }?>
-                                                style="width:1000px" 
+                                                style="width:1000px"
                                             />
                                         </a>
                                     </div> <!--.post-banner-->
@@ -94,7 +88,7 @@ get_header(); ?>
                                             Read More <span class="">&rarr;</span>
                                         </a>
                                     </div> <!--.post-more-->
-                                    
+
                                 </div> <!--.span8-->
                             </div> <!--.row.post-->
 

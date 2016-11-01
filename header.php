@@ -231,6 +231,22 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <hr />
             </div>
         </div>
+        <div class="row hidden-desktop" id="mobile-top-nav">
+            <div class="span12">
+                <a href="http://www.ansoniawines.com/Collections" class="mobile-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/mob-col.jpg">
+                </a>
+                <a href="http://www.ansoniawines.com/Thanksgiving" class="mobile-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/mob-tgiv.jpg">
+                </a>
+                <a href="http://www.ansoniawines.com/Mixed" class="mobile-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/mob-mix.jpg">
+                </a>
+                <a href="http://www.ansoniawines.com/Fall-Futures" class="mobile-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/mob_fut.jpg">
+                </a>
+            </div>
+        </div>
         <?php endif; ?>
 
         <div class="modal fade hide" style="height:325px; width:850px;" >
