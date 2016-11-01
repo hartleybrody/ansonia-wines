@@ -2,6 +2,11 @@
 
     error_reporting(E_ALL & ~E_NOTICE);
 
+    if (!$_POST['name'] || !$_POST['zip']){
+        header("Location: http://www.ansoniawines.com/join/?email=" . $_POST['email']);
+        exit();
+    }
+
     $API_KEY = "0c0a15bde5cc40d382dc0599e1fe4764-us10";
     $API_ROOT = "https://us10.api.mailchimp.com/3.0";
     $BASIC_AUTH = "hartley:" . $API_KEY; // note that the 'user' before the colon can be any string
@@ -53,7 +58,7 @@
     // print_r($responseData);
 
     // echo "Thanks for subscribing!";
-    header("Location: http://www.ansoniawines.com/");
+    header("Location: http://www.ansoniawines.com/confirm/");
     exit();
 
 ?>
