@@ -1,0 +1,20 @@
+<!-- continue message at to of page -->
+<span id="continue-msg" style="display: none; background: #4e7ea3; color: white; border-radius: 5px; padding: 5px; width: 100%; text-align: center;" >
+  Please include you Name and Zip Code below
+</span>
+
+<!-- CSS and JS that goes at the bottom of the page -->
+<style>
+  #post-3842{
+    width: 400px;
+    margin: 0 auto;
+  }
+</style>
+<script type="text/javascript">
+  var email_index = document.location.search.slice(1).indexOf("email=");
+  if (email_index !== -1){
+      var email = document.location.search.slice(1).slice(email_index+6).split("&")[0]
+      document.getElementById("sub-EMAIL").value = email;
+      document.getElementById("continue-msg").style.display = "block";
+    }
+</script>
