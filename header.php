@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    
+
     <meta name="p:domain_verify" content="baf89b49d584666650e94a5f7e812e27"/>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.png" />
@@ -35,13 +35,13 @@
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
     <![endif]-->
-    
+
     <meta name='viewport' content='content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/_s/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/_s/bootstrap/css/bootstrap-responsive.css">
     <link rel="stylesheet" href="<?php echo get_site_url(); ?>/wp-content/themes/_s/style.css">
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
-    
+
     <?php wp_head(); ?>
 
 <script>(function() {
@@ -75,10 +75,10 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
             <div class="span6">
                 <ul id="links">
                     <!-- navigation links -->
-                    <?php 
+                    <?php
                         $bookmarks_args = array(
-                            'limit' => -1, 
-                            'category' => 3, 
+                            'limit' => -1,
+                            'category' => 3,
                             );
                         $bookmarks = get_bookmarks($bookmarks_args);
 
@@ -90,7 +90,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             return ($a->link_rating < $b->link_rating) ? -1 : 1;
                         }
                         usort($bookmarks, "sort_by_rating");
-                        
+
                         foreach ($bookmarks as $bookmark) {
                             $bookmark_repr = '<li class="link"><a href="' . $bookmark->link_url . '">' . $bookmark->link_name . '</a></li>';
                             echo($bookmark_repr);
@@ -120,8 +120,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 </span>
 
                 <!-- Begin MailChimp Signup Form -->
-                <form action="//ansoniawines.us10.list-manage.com/subscribe/post?u=ecdc119b3e0f9307376bd0bb7&amp;id=c9624d5296" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display: inline;">
-                    <input type="email" value="" name="EMAIL" class="required email input-large input" id="mce-EMAIL" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #990000; width:170px" placeholder="Email Address...">
+                <form action="/wp-content/themes/_s/mc-submit.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="display: inline;">
+                    <input type="email" value="" name="email" class="required email input-large input" id="mce-EMAIL" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; font-size:10px; border:1px solid #990000; width:170px" placeholder="Email Address...">
                     <div style="position: absolute; left: -5000px;">
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <input type="text" name="b_ecdc119b3e0f9307376bd0bb7_c9624d5296" tabindex="-1" value="">
@@ -137,26 +137,26 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
         <div class="navbar hidden-desktop">
             <div class="navbar-inner">
                 <div class="container">
-         
+
                     <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-         
+
                     <!-- Be sure to leave the brand out there if you want it shown -->
                     <a class="brand" href="/">Ansonia Wines</a>
-         
+
                     <!-- Everything you want hidden at 940px or less, place within here -->
                     <div class="nav-collapse collapse">
                         <!-- .nav, .navbar-search, .navbar-form, etc -->
                         <ul id="mobile-links">
                             <!-- navigation links -->
-                            <?php 
+                            <?php
                                 $bookmarks_args = array(
-                                    'limit' => -1, 
-                                    'category' => 3, 
+                                    'limit' => -1,
+                                    'category' => 3,
                                     );
                                 $bookmarks = get_bookmarks($bookmarks_args);
 
@@ -168,7 +168,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                                 //     return ($a->link_rating < $b->link_rating) ? -1 : 1;
                                 // }
                                 usort($bookmarks, "sort_by_rating");
-                                
+
                                 foreach ($bookmarks as $bookmark) {
                                     $bookmark_repr = '<li class="link"><a href="' . $bookmark->link_url . '">' . $bookmark->link_name . '</a></li>';
                                     echo($bookmark_repr);
@@ -204,7 +204,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             <hr />
                         </ul>
                     </div>
-         
+
                 </div>
             </div>
         </div>
@@ -218,17 +218,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <div id="myCarousel" class="carousel slide">
                     <!-- Carousel items -->
                     <div class="carousel-inner">
-                     
+
                         <div class="item">
                             <a href="http://www.ansoniawines.com/about?utm_source=carousel&utm_medium=banner&utm_campaign=Carousel-banner
 ">
                                 <img src="http://www.ansoniawines.com/wp-content/themes/_s/img/slideshow/about_slide2.jpg">
-                            </a>
-                        </div>
-			<div class="item">
-                            <a href="http://www.ansoniawines.com/join?utm_source=carousel&utm_medium=banner&utm_campaign=Join-Banner
-">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/01/JOIN_BANNER.jpg">
                             </a>
                         </div>
 			<div class="item">
@@ -237,8 +231,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             </a>
                         </div>
 			<div class="item active">
-                            <a href="http://www.ansoniawines.com/wp-content/uploads/2016/09/ansonia_september_futures.pdf">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/09/banner.jpg">
+                            <a href="http://www.ansoniawines.com/thanksgiving">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/10/banner-tgiv.jpg">
                             </a>
                         </div>
 			<div class="item">
@@ -247,8 +241,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                             </a>
                         </div>
 			<div class="item">
-                            <a href="http://www.ansoniawines.com/about-video/">
-                                <img src="http://www.ansoniawines.com/wp-content/uploads/2016/05/aboutvideo2.jpg">
+                            <a href="http://www.ansoniawines.com/futures/">
+                                <img src="http://www.ansoniawines.com/wp-content/uploads/2012/12/november_futures_banner.jpg">
                             </a>
                         </div>
 			<div class="item">
@@ -288,8 +282,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <img src="<?php echo get_site_url(); ?>/wp-content/themes/_s/img/welcome-modal-text.jpg" style="margin-left:-5px" />
 
                 <!-- Begin MailChimp Signup Form -->
-                <form action="//ansoniawines.us10.list-manage.com/subscribe/post?u=ecdc119b3e0f9307376bd0bb7&amp;id=c9624d5296" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="margin-top: 10px;">
-                    <input type="email" value="" name="EMAIL" class="required email input-large input" id="mce-EMAIL" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; border:1px solid #CCCCCC; width:250px;" placeholder="Email Address...">
+                <form action="/wp-content/themes/_s/mc-submit.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="margin-top: 10px;">
+                    <input type="email" value="" name="email" class="required email input-large input" id="mce-EMAIL" style="font-family:Verdana,Geneva,Arial,Helvetica,sans-serif; border:1px solid #CCCCCC; width:250px;" placeholder="Email Address...">
                     <div style="position: absolute; left: -5000px;">
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                         <input type="text" name="b_ecdc119b3e0f9307376bd0bb7_c9624d5296" tabindex="-1" value="">
