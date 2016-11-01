@@ -7,9 +7,10 @@
         exit();
     }
 
-    $API_KEY = "0c0a15bde5cc40d382dc0599e1fe4764-us10";
+    include $_SERVER["DOCUMENT_ROOT"] . '/wp-content/themes/_s/config.inc';
+
     $API_ROOT = "https://us10.api.mailchimp.com/3.0";
-    $BASIC_AUTH = "hartley:" . $API_KEY; // note that the 'user' before the colon can be any string
+    $BASIC_AUTH = "hartley:" . $MC_API_KEY; // note that the 'user' before the colon can be any string
     $AUTH_TOKEN = "Basic " . base64_encode($BASIC_AUTH);
 
     $LIST_ID = "c9624d5296";
