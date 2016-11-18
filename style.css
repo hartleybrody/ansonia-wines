@@ -389,7 +389,7 @@ body.woocommerce #footer {
 
 /* cart */
 
-body.woocommerce-cart #page-content {
+.woocommerce-cart #page-content {
     width: 940px;
     margin-left: 0;
 }
@@ -404,6 +404,21 @@ body.woocommerce-cart #page-content {
 
 .woocommerce a.checkout-button {
     background-color: #006699 !important;
+}
+
+/* woocommerce mobile responsive */
+
+@media (max-width: 979px) {
+
+    .woocommerce-cart #page-content, .woocommerce .cart-collaterals .cart_totals {
+        width: 95%;
+        margin: 35px auto 0;
+    }
+
+
+    .woocommerce #content, .woocommerce-cart #page-content {
+        margin-top: 35px;
+    }
 }
 
 /****************************************************
