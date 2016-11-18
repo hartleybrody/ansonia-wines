@@ -216,25 +216,25 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
         <!-- homepage image nav -->
         <div class="row visible-desktop" id="desktop-top-nav">
             <div class="span12">
-                <a href="http://www.ansoniawines.com/Collections" class="desktop-header-img">
-                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk-col.jpg">
+                <a href="http://www.ansoniawines.com/sale" class="desktop-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk_sale.jpg">
                 </a>
                 <a href="http://www.ansoniawines.com/Thanksgiving" class="desktop-header-img">
-                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk-tgiv.jpg">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk-tgiv1.jpg">
                 </a>
-                <a href="http://www.ansoniawines.com/Mixed" class="desktop-header-img">
-                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk-mix.jpg">
+                <a href="http://www.ansoniawines.com/holiday" class="desktop-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/gifts-1.jpg">
                 </a>
-                <a href="http://www.ansoniawines.com/Fall-Futures" class="desktop-header-img">
-                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk_fallfut.jpg">
+		<a href="http://www.ansoniawines.com/Mixed" class="desktop-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/dsk-mix1.jpg">
                 </a>
                 <hr />
             </div>
         </div>
         <div class="row hidden-desktop" id="mobile-top-nav">
             <div class="span12">
-                <a href="http://www.ansoniawines.com/Collections" class="mobile-header-img">
-                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/mob-col.jpg">
+                <a href="http://www.ansoniawines.com/sale" class="mobile-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/mob-sale.jpg">
                 </a>
                 <a href="http://www.ansoniawines.com/Thanksgiving" class="mobile-header-img">
                     <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/mob-tgiv.jpg">
@@ -242,17 +242,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                 <a href="http://www.ansoniawines.com/Mixed" class="mobile-header-img">
                     <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/mob-mix.jpg">
                 </a>
-                <a href="http://www.ansoniawines.com/Fall-Futures" class="mobile-header-img">
-                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/mob_fut.jpg">
+                <a href="http://www.ansoniawines.com/holiday" class="mobile-header-img">
+                    <img src="http://www.ansoniawines.com/wp-content/uploads/2016/11/mob-gift.jpg">
                 </a>
             </div>
         </div>
-        <!-- compensate for height of images, don't need to push the main content down as much as we do on other mobile pages for the navbar -->
-        <style type="text/css">
-            #main-content {
-                margin-top: 15px;
-            }
-        </style>
         <?php endif; ?>
 
         <div class="modal fade hide" style="height:325px; width:850px;" >
