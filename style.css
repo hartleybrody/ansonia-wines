@@ -374,6 +374,16 @@ body.woocommerce #footer {
     font-size: 30px;
 }
 
+.back-button {
+    display: block;
+    float: left;
+    clear: both;
+    font-family: 'Georgia', serif;
+    color: #777;
+}
+.back-button:hover {
+    color: #333;
+}
 
 /****************************************************
     responsive
