@@ -355,6 +355,26 @@ h2.widgettitle:first-child{
     font-family: 'Georgia', serif;
 }
 
+
+/****************************************************
+    Woocommerce
+****************************************************/
+body.woocommerce #sidebar {
+    display: none;
+}
+
+body.woocommerce #footer {
+    padding-top: 75px;
+    clear: both;
+}
+
+.product_title.entry-title {
+    font-family: 'Georgia', serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+
 /****************************************************
     responsive
 ****************************************************/
