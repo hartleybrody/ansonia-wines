@@ -359,7 +359,7 @@ h2.widgettitle:first-child{
 /****************************************************
     Woocommerce
 ****************************************************/
-body.woocommerce #sidebar {
+body.woocommerce #sidebar, body.woocommerce-cart #sidebar {
     display: none;
 }
 
@@ -367,6 +367,8 @@ body.woocommerce #footer {
     padding-top: 75px;
     clear: both;
 }
+
+/* single product */
 
 .product_title.entry-title {
     font-family: 'Georgia', serif;
@@ -383,6 +385,25 @@ body.woocommerce #footer {
 }
 .back-button:hover {
     color: #333;
+}
+
+/* cart */
+
+body.woocommerce-cart #page-content {
+    width: 940px;
+    margin-left: 0;
+}
+
+.woocommerce a.remove {
+    color: #333 !important;
+}
+
+.woocommerce .cart-collaterals .cart_totals {
+    width: 60%;
+}
+
+.woocommerce a.checkout-button {
+    background-color: #006699 !important;
 }
 
 /****************************************************
