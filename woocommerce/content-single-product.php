@@ -82,6 +82,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 </div><!-- #product-<?php the_ID(); ?> -->
 
-<a href="#" class="back-button">&larr; Back to the Holiday Guide</a>
+<a href="/holiday" class="back-button">&larr; Back to the Holiday Guide</a>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
