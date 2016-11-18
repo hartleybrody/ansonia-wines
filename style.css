@@ -359,7 +359,7 @@ h2.widgettitle:first-child{
 /****************************************************
     Woocommerce
 ****************************************************/
-body.woocommerce #sidebar, body.woocommerce-cart #sidebar {
+body.woocommerce #sidebar, body.woocommerce-cart #sidebar, body.woocommerce-page #sidebar {
     display: none;
 }
 
@@ -387,9 +387,9 @@ body.woocommerce #footer {
     color: #333;
 }
 
-/* cart */
+/* cart & checkout */
 
-.woocommerce-cart #page-content {
+.woocommerce-cart #page-content, .woocommerce-checkout #page-content {
     width: 940px;
     margin-left: 0;
 }
@@ -406,11 +406,17 @@ body.woocommerce #footer {
     background-color: #006699 !important;
 }
 
+#ship-to-different-address label {
+    float: right;
+    position: relative;
+    top: 15px;
+}
+
 /* woocommerce mobile responsive */
 
 @media (max-width: 979px) {
 
-    .woocommerce-cart #page-content, .woocommerce .cart-collaterals .cart_totals {
+    .woocommerce-cart #page-content, .woocommerce .cart-collaterals .cart_totals, .woocommerce-checkout #page-content {
         width: 95%;
         margin: 35px auto 0;
     }
