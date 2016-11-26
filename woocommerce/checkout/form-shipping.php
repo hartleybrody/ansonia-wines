@@ -68,6 +68,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <script type="text/javascript">
 
+	// since woocommerce defines all of their checkout form field values
+	// in a plugin function, i don't want to overwrite them there or the
+	// change will be blown away next plugin update. update w JS instead
+
 	var order_comments = document.getElementById("order_comments_field")
 	order_comments.getElementsByTagName("label")[0].innerHTML = "Pickup in Newton?"
 	order_comments.getElementsByTagName("textarea")[0].placeholder = "Write here to pick up at the Newton, MA warehouse."
